@@ -4,7 +4,22 @@ using UnityEngine;
 
 public class CommandInvoker : MonoBehaviour
 {
-    public static Queue<ICommand> commandsToExecute = new Queue<ICommand>();
+    private static CommandInvoker instance;
+    public static CommandInvoker Instance => instance;
+    public Queue<ICommand> commandsToExecute = new Queue<ICommand>();
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public void AddCommand(ICommand command)
     {

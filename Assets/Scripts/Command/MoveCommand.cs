@@ -44,8 +44,8 @@ public class MoveCommand : ICommand
             yield return new WaitForFixedUpdate();
         }
 
-        if(CommandInvoker.commandsToExecute.Count > 0 
-            && CommandInvoker.commandsToExecute.Peek() is CurlCommand)
+        if(CommandInvoker.Instance.commandsToExecute.Count > 0 
+            && CommandInvoker.Instance.commandsToExecute.Peek() is CurlCommand)
         {
 
         }  

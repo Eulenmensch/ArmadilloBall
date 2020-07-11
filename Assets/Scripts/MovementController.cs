@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public class MovementController : MonoBehaviour
 {
-    [SerializeField] private CommandInvoker commandInvoker = null;
     [SerializeField] private EnergyController energyController = null;
     [SerializeField] private FloatVariable energy = null;
     [SerializeField] private GameObject arrowPrefab = null;
@@ -27,13 +26,15 @@ public class MovementController : MonoBehaviour
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
-        if (GameManager.Instance.currentState == State.Execution) return;
+        if (GameManager.Instance.currentState != State.Input) return;
 
         if (energy.value <= 0)
         {
             Destroy(arrow);
             return;
         }
+
+        Debug.Log(isReady);
 
         if (context.started)
         {
@@ -78,39 +79,41 @@ public class MovementController : MonoBehaviour
                 energyController.StopEnergyDrain();
                 SendMoveCommand();
                 HideMoveArrow();
-                direction = Vector2.zero;
+                direction = Vector2.zero; 
             }
+
+            isReady = false;
         }
     }
 
     public void OnCurl(InputAction.CallbackContext context)
     {
-        if (GameManager.Instance.currentState == State.Execution) return;
+        if (GameManager.Instance.currentState != State.Input) return;
 
         if (context.canceled)
         {
             if (energy.value < energyController.EnergyCostCurleToggle) return;
             
             energy.value -= energyController.EnergyCostCurleToggle;
-            commandInvoker.AddCommand(new CurlCommand());
+            CommandInvoker.Instance.AddCommand(new CurlCommand());
         }
     }
 
     public void OnSubmitMovement(InputAction.CallbackContext context)
     {
-        if (GameManager.Instance.currentState == State.Execution) return;
+        if (GameManager.Instance.currentState != State.Input) return;
+        if (isReady) return;
 
         if (context.started)
         {
-            StartCoroutine(commandInvoker.ExectueAllCommands());
-            isReady = false;
+            StartCoroutine(CommandInvoker.Instance.ExectueAllCommands());
         }
     }
 
     public void SendMoveCommand()
     {
         float pressDuration = Time.time - timePressed;
-        commandInvoker.AddCommand(new MoveCommand(pressDuration, direction));
+        CommandInvoker.Instance.AddCommand(new MoveCommand(pressDuration, direction));
         timePressed = 0f;
     }
 

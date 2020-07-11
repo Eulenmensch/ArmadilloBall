@@ -5,7 +5,8 @@ using UnityEngine;
 public enum State
 {
     Input,
-    Execution
+    Execution,
+    Win
 }
 public class GameManager : MonoBehaviour
 {
@@ -37,11 +38,17 @@ public class GameManager : MonoBehaviour
         currentState = State.Input;
         Player.Instance.ResetEnergyAmount();
         currentTurn++;
-        print(currentTurn);
     }
 
     public void ChangeToExecutionState()
     {
         currentState = State.Execution;
+    }
+
+    public void WinGame()
+    {
+        currentState = State.Win;
+        Debug.Log("You won!");
+        StopAllCoroutines();
     }
 }
