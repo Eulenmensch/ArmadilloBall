@@ -3,12 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveCommand : MonoBehaviour, ICommand
+public class MoveCommand : ICommand
 {
-    [SerializeField] private GameObject player;
-    [SerializeField] private Vector2 moveDirection;
-    [SerializeField] private float moveDuration;
-    private float moveSpeed;
+    private Vector2 moveDirection;
+    private float moveDuration;
+    private float moveSpeed = 5f;
 
 
     public MoveCommand(float moveDuration, Vector2 moveDirection)
@@ -19,17 +18,16 @@ public class MoveCommand : MonoBehaviour, ICommand
 
     public IEnumerator Execute()
     {
-        return MovePlayerInDirection(player.transform, moveDuration, moveDirection);
+        return MovePlayerInDirection(moveDuration, moveDirection);
     }
 
-    private IEnumerator MovePlayerInDirection(Transform transform, float moveDuration, Vector2 moveDirection)
+    private IEnumerator MovePlayerInDirection(float moveDuration, Vector2 moveDirection)
     {
         for(float remainingTime = moveDuration; remainingTime > 0; remainingTime -= Time.deltaTime)
         {
-            transform.Translate(moveDirection * Time.deltaTime * moveSpeed);
+            var direction3D = new Vector3(moveDirection.x, 0, moveDirection.y);
+            Player.Instance.transform.Translate(direction3D * Time.deltaTime * moveSpeed);
             yield return null;
         }
-
-        Debug.Log("BLA");
     }
 }

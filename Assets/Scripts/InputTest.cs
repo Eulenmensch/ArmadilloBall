@@ -1,21 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputTest : MonoBehaviour
 {
     public CommandInvoker commandInvoker;
 
-    // Update is called once per frame
-    void Update()
+    public void OnMove(InputValue value)
     {
-        if(Input.GetKeyDown(KeyCode.W))
-        {
-            commandInvoker.AddCommand(new MoveCommand(1, new Vector2(1, 1)));
-        }
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(commandInvoker.ExectueAllCommands());
-        }
+        Debug.Log("Here");
+        commandInvoker.AddCommand(new MoveCommand(0.5f, value.Get<Vector2>()));
+    }
+
+    public void OnTestNiceMan()
+    {
+        StartCoroutine(commandInvoker.ExectueAllCommands());
     }
 }

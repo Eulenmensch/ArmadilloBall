@@ -3,16 +3,10 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance;
 
-    // Use this for initialization
     void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        Instance = this;
     }
 }
