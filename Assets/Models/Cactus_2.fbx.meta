@@ -1,9 +1,27 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 2a1c20ce45c4046479fe601ef2f81c99
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
   externalObjects: {}
+=======
+guid: bf27d5a3323e31447949be337d02a9e4
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cactus.002
+    second: {fileID: 2100000, guid: 07ca33f07cea0984ba2e5e735897fd3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spike
+    second: {fileID: 2100000, guid: 68d1768b0eddea64983d90f78a327d61, type: 2}
+>>>>>>> Stashed changes
   materials:
     materialImportMode: 1
     materialName: 0
