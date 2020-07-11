@@ -34,8 +34,6 @@ public class MovementController : MonoBehaviour
             return;
         }
 
-        Debug.Log(isReady);
-
         if (context.started)
         {
             timePressed = Time.time;
@@ -79,10 +77,8 @@ public class MovementController : MonoBehaviour
                 energyController.StopEnergyDrain();
                 SendMoveCommand();
                 HideMoveArrow();
-                direction = Vector2.zero; 
+                direction = Vector2.zero;
             }
-
-            isReady = false;
         }
     }
 
@@ -102,11 +98,12 @@ public class MovementController : MonoBehaviour
     public void OnSubmitMovement(InputAction.CallbackContext context)
     {
         if (GameManager.Instance.currentState != State.Input) return;
-        if (isReady) return;
+        if (arrow != null) return;
 
         if (context.started)
         {
             StartCoroutine(CommandInvoker.Instance.ExectueAllCommands());
+            isReady = false;
         }
     }
 

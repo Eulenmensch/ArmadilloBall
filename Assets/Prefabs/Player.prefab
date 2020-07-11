@@ -124,10 +124,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5233377434529935622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e28a2c9230a29ea459559c3476218a44, type: 3}
+  m_Script: {fileID: 11500000, guid: 595de24e4ccebc042bfb8d48da009b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandInvoker: {fileID: 0}
   energyController: {fileID: 5233377434529935678}
   energy: {fileID: 11400000, guid: 9d583a07102a7144c8aca15c6471618d, type: 2}
   arrowPrefab: {fileID: 1762373717922741928, guid: 60377cebc5bf61b42929d74ffa4e32b3,

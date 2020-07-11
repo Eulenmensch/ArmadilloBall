@@ -41,9 +41,16 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    public void ToggleCurlAbility()
+    public void ActivateCurlAbility()
     {
-        isCurled = !isCurled;
+        isCurled = true;
+        rb.isKinematic = false;
+    }
+
+    public void DeactivateCurlAbility()
+    {
+        isCurled = false;
+        rb.isKinematic = true;
     }
 
     public void ResetEnergyAmount()

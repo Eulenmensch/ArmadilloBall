@@ -11,31 +11,32 @@ public class CurlCommand : ICommand
 
     public IEnumerator Execute()
     {
-        Player.Instance.ToggleCurlAbility();
+        Player.Instance.ActivateCurlAbility();
 
         //Play Curling Animation
         yield return WaitForEndOfMovement();
 
         //Play Uncurling Animation
 
-        Player.Instance.ToggleCurlAbility();
+        Player.Instance.DeactivateCurlAbility();
     }
 
     public IEnumerator WaitForEndOfMovement()
     {
-        while(Vector3.Magnitude(Player.Instance.rb.velocity) > 0.05f
+        while(Vector3.Magnitude(Player.Instance.rb.velocity) > 0.1f
             || !IsOnEvenGround())
         {
             yield return null;
         }
-        Player.Instance.rb.isKinematic = true;
     }
 
     private bool IsOnEvenGround()
     {
         RaycastHit raycastHit;
 
-        if(Physics.Raycast(Player.Instance.transform.position, Vector3.down, out raycastHit, 0.51f))
+        
+
+        if(Physics.Raycast(Player.Instance.transform.position, Vector3.down, out raycastHit, 0.6f))
         {
             if (Vector3.Dot(raycastHit.normal, Vector3.up) > 0.99)
                 return true;
