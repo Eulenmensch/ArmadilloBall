@@ -23,22 +23,6 @@ public class MovementController : MonoBehaviour
         }
     }
 
-    public void OnMove(InputValue value)
-    {
-        if (energy.value <= 0) return;
-        if (timePressed == 0)
-        {
-            direction = value.Get<Vector2>();
-            timePressed = Time.time;
-            energyController.StartEnergyDrain();
-        }
-        else
-        {
-            energyController.StopEnergyDrain();
-            SendMoveCommand();
-        }
-    }
-
     public void OnMoveInput(InputAction.CallbackContext context)
     {
         if (energy.value <= 0)
@@ -46,26 +30,29 @@ public class MovementController : MonoBehaviour
             Destroy(arrow);
             return;
         }
-        if (context.started)
-        {
-            timePressed = Time.time;
-            energyController.StartEnergyDrain();
-            ShowMoveArrow();
-        }
         if (context.performed)
         {
-            direction = context.ReadValue<Vector2>();
-            if (direction == Vector2.zero)
+            var inputDirection = context.ReadValue<Vector2>();
+            if (inputDirection.magnitude > 0.5f)
             {
-                print("input is zero");
+                if (arrow == null)
+                {
+                    timePressed = Time.time;
+                    energyController.StartEnergyDrain();
+                    ShowMoveArrow();
+                }
+                direction = context.ReadValue<Vector2>();
             }
-        }
-        if (context.canceled)
-        {
-            energyController.StopEnergyDrain();
-            SendMoveCommand();
-            HideMoveArrow();
-            direction = Vector2.zero;
+            else
+            {
+                if (arrow != null)
+                {
+                    energyController.StopEnergyDrain();
+                    SendMoveCommand();
+                    HideMoveArrow();
+                    direction = Vector2.zero;
+                }
+            }
         }
     }
 
@@ -84,13 +71,13 @@ public class MovementController : MonoBehaviour
     {
         if (context.started)
         {
-            print("submit movement");
             StartCoroutine(commandInvoker.ExectueAllCommands());
         }
     }
 
     public void SendMoveCommand()
     {
+        print(direction);
         float pressDuration = Time.time - timePressed;
         commandInvoker.AddCommand(new MoveCommand(pressDuration, direction));
         timePressed = 0f;
