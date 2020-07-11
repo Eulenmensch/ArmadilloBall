@@ -7,7 +7,6 @@ public class MoveCommand : ICommand
 {
     private Vector2 moveDirection;
     private float moveDuration;
-    private float moveSpeed = 5f;
 
 
     public MoveCommand(float moveDuration, Vector2 moveDirection)
@@ -23,10 +22,12 @@ public class MoveCommand : ICommand
 
     private IEnumerator MovePlayerInDirection(float moveDuration, Vector2 moveDirection)
     {
-        for(float remainingTime = moveDuration; remainingTime > 0; remainingTime -= Time.deltaTime)
+        if(moveDirection == Vector2.zero) yield break;
+
+        for (float remainingTime = moveDuration; remainingTime > 0; remainingTime -= Time.deltaTime)
         {
             var direction3D = new Vector3(moveDirection.x, 0, moveDirection.y);
-            Player.Instance.transform.Translate(direction3D * Time.deltaTime * moveSpeed);
+            Player.Instance.transform.Translate(direction3D * Time.deltaTime * Player.Instance.currentMoveSpeed);
             yield return null;
         }
     }
