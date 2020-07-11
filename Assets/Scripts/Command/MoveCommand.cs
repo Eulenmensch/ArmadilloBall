@@ -27,7 +27,7 @@ public class MoveCommand : ICommand
         for (float remainingTime = moveDuration; remainingTime > 0; remainingTime -= Time.deltaTime)
         {
             var direction3D = new Vector3(moveDirection.x, 0, moveDirection.y);
-            Player.Instance.transform.Translate(direction3D * Time.deltaTime * Player.Instance.currentMoveSpeed);
+            Player.Instance.transform.Translate(direction3D * Time.deltaTime * Player.Instance.CurrentMoveSpeed);
             yield return null;
         }
     }
