@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveCommand : ICommand
 {
     private Vector2 moveDirection;
     private float moveDuration;
+    [SerializeField] private float stopAcceleration;
 
 
     public MoveCommand(float moveDuration, Vector2 moveDirection)
@@ -22,13 +22,50 @@ public class MoveCommand : ICommand
 
     private IEnumerator MovePlayerInDirection(float moveDuration, Vector2 moveDirection)
     {
-        if(moveDirection == Vector2.zero) yield break;
+        RaycastHit raycastHit;
+
+        var rb = Player.Instance.rb;
+        rb.isKinematic = false;
 
         for (float remainingTime = moveDuration; remainingTime > 0; remainingTime -= Time.deltaTime)
         {
-            var direction3D = new Vector3(moveDirection.x, 0, moveDirection.y);
-            Player.Instance.transform.Translate(direction3D * Time.deltaTime * Player.Instance.CurrentMoveSpeed);
+            if (remainingTime / moveDuration > 0.1)
+            {
+                var direction3D = new Vector3(moveDirection.x, 0, moveDirection.y);
+
+                if (Physics.Raycast(Player.Instance.transform.position, Vector3.down, out raycastHit, 0.51f))
+                {
+                    direction3D = Vector3.ProjectOnPlane(direction3D, raycastHit.normal).normalized * direction3D.magnitude;
+                }
+                
+                rb.AddForce(direction3D * Player.Instance.CurrentMoveSpeed, ForceMode.Acceleration);
+            }
+            yield return Falling();
+            yield return new WaitForFixedUpdate();
+        }
+
+        if (!Player.Instance.IsCurled)
+            rb.isKinematic = true;
+        else
+            yield return new WaitForSeconds(1);
+            yield return WaitForEndOfMovement();
+    }
+
+    private IEnumerator Falling()
+    {
+        while(!Physics.Raycast(Player.Instance.transform.position, Vector3.down, 0.51f))
+        {
+            yield return null;
+        }      
+    }
+
+    public IEnumerator WaitForEndOfMovement()
+    {
+        while (Vector3.Magnitude(Player.Instance.rb.velocity) > 0.05f)
+        {
             yield return null;
         }
+        Player.Instance.rb.isKinematic = true;
+        Debug.Log("BLA");
     }
 }

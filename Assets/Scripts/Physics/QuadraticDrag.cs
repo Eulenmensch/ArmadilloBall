@@ -3,8 +3,8 @@
 [RequireComponent(typeof(Rigidbody))]
 public class QuadraticDrag : MonoBehaviour
 {
-    [SerializeField] private float Drag;            //Quadratic force applied counter the board's velocity
-    [SerializeField] private float AngularDrag;     //Quadratic force applied counter the board's angular velocity
+    [SerializeField] private float Drag = 0;            //Quadratic force applied counter the board's velocity
+    [SerializeField] private float AngularDrag = 0;     //Quadratic force applied counter the board's angular velocity
 
     private Rigidbody Body;
 

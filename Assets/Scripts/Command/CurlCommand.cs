@@ -16,11 +16,21 @@ public class CurlCommand : ICommand
         {
             //Play Curling Animation
             yield return new WaitForSeconds(1f);
+            yield return WaitForEndOfMovement();
         }
         else
         {
-            //Play Curling Animation
+            //Play Uncurling Animation
             yield return new WaitForSeconds(1f);
         }
+    }
+
+    public IEnumerator WaitForEndOfMovement()
+    {
+        while(Vector3.Magnitude(Player.Instance.rb.velocity) > 0.05f)
+        {
+            yield return null;
+        }
+        Player.Instance.rb.isKinematic = true;
     }
 }

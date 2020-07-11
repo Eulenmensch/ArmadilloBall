@@ -12,8 +12,6 @@ public class Player : MonoBehaviour
     [SerializeField] private FloatVariable currentEnergy = null;
     [SerializeField] private float moveSpeedCurled = 0;
     [SerializeField] private float moveSpeedUncurled = 0;
-    [SerializeField] private float curledDrag = 0;
-    [SerializeField] private float curledAngularDrag = 0;
 
     private float currentMoveSpeed = 0;
     public float CurrentMoveSpeed => currentMoveSpeed;
@@ -21,7 +19,7 @@ public class Player : MonoBehaviour
     private bool isCurled = false;
     public bool IsCurled => isCurled;
 
-    private Rigidbody rb;
+    public Rigidbody rb;
 
 
     private void Awake()
@@ -47,18 +45,15 @@ public class Player : MonoBehaviour
     public void ToggleCurlAbility()
     {
         isCurled = !isCurled;
+        rb.isKinematic = !rb.isKinematic;
 
         if (isCurled)
         {
             currentMoveSpeed = moveSpeedCurled;
-            rb.drag = curledDrag;
-            rb.angularDrag = curledAngularDrag;
         }
         else
         {
             currentMoveSpeed = moveSpeedUncurled;
-            rb.drag = Mathf.Infinity;
-            rb.angularDrag = Mathf.Infinity;
         }
     }
 }
