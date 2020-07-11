@@ -12,17 +12,12 @@ public class CurlCommand : ICommand
     {
         Player.Instance.ToggleCurlAbility();
 
-        if(Player.Instance.IsCurled)
-        {
-            //Play Curling Animation
-            yield return new WaitForSeconds(1f);
-            yield return WaitForEndOfMovement();
-        }
-        else
-        {
-            //Play Uncurling Animation
-            yield return new WaitForSeconds(1f);
-        }
+        //Play Curling Animation
+        yield return WaitForEndOfMovement();
+
+        //Play Uncurling Animation
+
+        Player.Instance.ToggleCurlAbility();
     }
 
     public IEnumerator WaitForEndOfMovement()

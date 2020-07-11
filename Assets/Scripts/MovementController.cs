@@ -15,43 +15,36 @@ public class MovementController : MonoBehaviour
     private GameObject arrow;
     private MoveArrow arrowController;
 
+    private bool isReady = true;
+
     private void Update()
     {
-        if (energy.value > 0.0f && direction.magnitude > 0.0f)
+        if (energy.value > 0.0f && direction.magnitude > 0.0f && isReady)
         {
             MoveAndScaleMoveArrow();
         }
     }
 
-    public void OnMove(InputValue value)
-    {
-        if (energy.value <= 0) return;
-        if (timePressed == 0)
-        {
-            direction = value.Get<Vector2>();
-            timePressed = Time.time;
-            energyController.StartEnergyDrain();
-        }
-        else
-        {
-            energyController.StopEnergyDrain();
-            SendMoveCommand();
-        }
-    }
-
     public void OnMoveInput(InputAction.CallbackContext context)
     {
+        if (GameStateManager.currentState == State.Execution) return;
+
         if (energy.value <= 0)
         {
             Destroy(arrow);
             return;
         }
+
         if (context.started)
-        {
+        { 
             timePressed = Time.time;
             energyController.StartEnergyDrain();
             ShowMoveArrow();
+            isReady = true;
         }
+
+        if (!isReady) return;
+
         if (context.performed)
         {
             direction = context.ReadValue<Vector2>();
@@ -71,10 +64,12 @@ public class MovementController : MonoBehaviour
 
     public void OnCurl(InputAction.CallbackContext context)
     {
+        if (GameStateManager.currentState == State.Execution) return;
+
         if (context.canceled)
         {
             if (energy.value < energyController.EnergyCostCurleToggle) return;
-
+            
             energy.value -= energyController.EnergyCostCurleToggle;
             commandInvoker.AddCommand(new CurlCommand());
         }
@@ -82,10 +77,13 @@ public class MovementController : MonoBehaviour
 
     public void OnSubmitMovement(InputAction.CallbackContext context)
     {
+        if (GameStateManager.currentState == State.Execution) return;
+
         if (context.started)
         {
-            print("submit movement");
+            GameStateManager.ChangeToExecutionState();
             StartCoroutine(commandInvoker.ExectueAllCommands());
+            isReady = false;
         }
     }
 

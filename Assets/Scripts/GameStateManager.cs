@@ -15,4 +15,15 @@ public class GameStateManager : MonoBehaviour
     {
         currentState = State.Input;
     }
+
+    public static void ChangeToInputState()
+    {
+        currentState = State.Input;
+        Player.Instance.ResetEnergyAmount();
+    }
+
+    public static void ChangeToExecutionState()
+    {
+        currentState = State.Execution;
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CommandInvoker : MonoBehaviour
 {
-    private Queue<ICommand> commandsToExecute = new Queue<ICommand>();
+    public static Queue<ICommand> commandsToExecute = new Queue<ICommand>();
 
     public void AddCommand(ICommand command)
     {
@@ -17,5 +17,7 @@ public class CommandInvoker : MonoBehaviour
         {
             yield return commandsToExecute.Dequeue().Execute();
         }
+
+        GameStateManager.ChangeToInputState();
     }
 }

@@ -9,7 +9,7 @@ public class EnergyController : MonoBehaviour
     [SerializeField] private float energyCostPerSecond = 0;
     [SerializeField] private float energyCostCurleToggle = 0;
 
-   public float EnergyCostCurleToggle => energyCostCurleToggle;
+    public float EnergyCostCurleToggle => energyCostCurleToggle;
 
     private bool isEnergyDraining = false;
 

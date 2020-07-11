@@ -29,8 +29,8 @@ public class MoveCommand : ICommand
 
         for (float remainingTime = moveDuration; remainingTime > 0; remainingTime -= Time.deltaTime)
         {
-            if (remainingTime / moveDuration > 0.1)
-            {
+            //if (remainingTime / moveDuration > 0.1)
+            //{
                 var direction3D = new Vector3(moveDirection.x, 0, moveDirection.y);
 
                 if (Physics.Raycast(Player.Instance.transform.position, Vector3.down, out raycastHit, 0.51f))
@@ -38,17 +38,19 @@ public class MoveCommand : ICommand
                     direction3D = Vector3.ProjectOnPlane(direction3D, raycastHit.normal).normalized * direction3D.magnitude;
                 }
                 
-                rb.AddForce(direction3D * Player.Instance.CurrentMoveSpeed, ForceMode.Acceleration);
-            }
+                rb.AddForce(direction3D * Player.Instance.CurrentMoveForce, ForceMode.Acceleration);
+            //}
             yield return Falling();
             yield return new WaitForFixedUpdate();
         }
 
-        if (!Player.Instance.IsCurled)
-            rb.isKinematic = true;
+        if(CommandInvoker.commandsToExecute.Count > 0 
+            && CommandInvoker.commandsToExecute.Peek() is CurlCommand)
+        {
+
+        }  
         else
-            yield return new WaitForSeconds(1);
-            yield return WaitForEndOfMovement();
+            rb.isKinematic = true;
     }
 
     private IEnumerator Falling()
@@ -66,6 +68,5 @@ public class MoveCommand : ICommand
             yield return null;
         }
         Player.Instance.rb.isKinematic = true;
-        Debug.Log("BLA");
     }
 }

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MoveArrow : MonoBehaviour
 {
-    [SerializeField] GameObject Tip;
-    [SerializeField] GameObject Body;
-    [SerializeField] float LengthMultiplier;
+    [SerializeField] GameObject Tip = null;
+    [SerializeField] GameObject Body = null;
+    [SerializeField] float LengthMultiplier = 0;
 
     public void SetArrowLength(float _length)
     {
