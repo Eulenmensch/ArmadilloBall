@@ -615,8 +615,7 @@ MonoBehaviour:
   currentEnergy: {fileID: 11400000, guid: 9d583a07102a7144c8aca15c6471618d, type: 2}
   moveSpeedCurled: 10
   moveSpeedUncurled: 7
-  curledDrag: 0.5
-  curledAngularDrag: 1
+  rb: {fileID: 0}
 --- !u!114 &1678996512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,7 +645,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1678996510}
-        m_MethodName: OnMove
+        m_MethodName: OnMoveInput
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -756,7 +755,6 @@ MonoBehaviour:
   input: {fileID: 1678996510}
   energy: {fileID: 11400000, guid: 9d583a07102a7144c8aca15c6471618d, type: 2}
   energyCostPerSecond: 20
-  energyCostJump: 0
   energyCostCurleToggle: 10
 --- !u!54 &1678996514
 Rigidbody:

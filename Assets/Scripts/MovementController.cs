@@ -15,26 +15,37 @@ public class MovementController : MonoBehaviour
     private GameObject arrow;
     private MoveArrow arrowController;
 
+    private void Update()
+    {
+        if (energy.value > 0.0f && direction.magnitude > 0.0f)
+        {
+            MoveAndScaleMoveArrow();
+        }
+    }
 
-    // public void OnMove(InputValue value)
-    // {
-    //     if (energy.value <= 0) return;
-    //     if (timePressed == 0)
-    //     {
-    //         direction = value.Get<Vector2>();
-    //         timePressed = Time.time;
-    //         energyController.StartEnergyDrain();
-    //     }
-    //     else
-    //     {
-    //         energyController.StopEnergyDrain();
-    //         SendMoveCommand();
-    //     }
-    // }
-
-    public void OnMove(InputAction.CallbackContext context)
+    public void OnMove(InputValue value)
     {
         if (energy.value <= 0) return;
+        if (timePressed == 0)
+        {
+            direction = value.Get<Vector2>();
+            timePressed = Time.time;
+            energyController.StartEnergyDrain();
+        }
+        else
+        {
+            energyController.StopEnergyDrain();
+            SendMoveCommand();
+        }
+    }
+
+    public void OnMoveInput(InputAction.CallbackContext context)
+    {
+        if (energy.value <= 0)
+        {
+            Destroy(arrow);
+            return;
+        }
         if (context.started)
         {
             timePressed = Time.time;
@@ -48,13 +59,13 @@ public class MovementController : MonoBehaviour
             {
                 print("input is zero");
             }
-            MoveAndScaleMoveArrow();
         }
         if (context.canceled)
         {
             energyController.StopEnergyDrain();
             SendMoveCommand();
             HideMoveArrow();
+            direction = Vector2.zero;
         }
     }
 
@@ -71,8 +82,9 @@ public class MovementController : MonoBehaviour
 
     public void OnSubmitMovement(InputAction.CallbackContext context)
     {
-        if (context.canceled)
+        if (context.started)
         {
+            print("submit movement");
             StartCoroutine(commandInvoker.ExectueAllCommands());
         }
     }
