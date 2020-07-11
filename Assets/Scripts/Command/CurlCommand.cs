@@ -22,10 +22,22 @@ public class CurlCommand : ICommand
 
     public IEnumerator WaitForEndOfMovement()
     {
-        while(Vector3.Magnitude(Player.Instance.rb.velocity) > 0.05f)
+        while(Vector3.Magnitude(Player.Instance.rb.velocity) > 0.05f
+            || !IsOnEvenGround())
         {
             yield return null;
         }
         Player.Instance.rb.isKinematic = true;
+    }
+
+    private bool IsOnEvenGround()
+    {
+        RaycastHit raycastHit;
+
+        if(Physics.Raycast(Player.Instance.transform.position, Vector3.down, out raycastHit, 0.51f))
+        {
+            //raycastHit.normal;
+        }
+        return false;
     }
 }

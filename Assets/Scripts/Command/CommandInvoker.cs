@@ -13,11 +13,13 @@ public class CommandInvoker : MonoBehaviour
 
     public IEnumerator ExectueAllCommands()
     {
+        GameManager.Instance.ChangeToExecutionState();
+
         while (commandsToExecute.Count > 0)
         {
             yield return commandsToExecute.Dequeue().Execute();
         }
 
-        GameStateManager.ChangeToInputState();
+        GameManager.Instance.ChangeToInputState();
     }
 }

@@ -15,9 +15,11 @@ public class MovementController : MonoBehaviour
     private GameObject arrow;
     private MoveArrow arrowController;
 
+    private bool isReady = false;
+
     private void Update()
     {
-        if (energy.value > 0.0f && direction.magnitude > 0.0f)
+        if (energy.value > 0.0f && direction.magnitude > 0.0f && isReady)
         {
             MoveAndScaleMoveArrow();
         }
@@ -25,11 +27,24 @@ public class MovementController : MonoBehaviour
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
+        if (GameManager.Instance.currentState == State.Execution) return;
+
         if (energy.value <= 0)
         {
             Destroy(arrow);
             return;
         }
+
+        if (context.started)
+        {
+            timePressed = Time.time;
+            energyController.StartEnergyDrain();
+            ShowMoveArrow();
+            isReady = true;
+        }
+
+        if (!isReady) return;
+
         if (context.performed)
         {
             var inputDirection = context.ReadValue<Vector2>();
@@ -41,9 +56,10 @@ public class MovementController : MonoBehaviour
                     energyController.StartEnergyDrain();
                     ShowMoveArrow();
                 }
+
                 direction = context.ReadValue<Vector2>();
             }
-            else
+            else 
             {
                 if (arrow != null)
                 {
@@ -54,14 +70,27 @@ public class MovementController : MonoBehaviour
                 }
             }
         }
+
+        if(context.canceled)
+        {
+            if (arrow != null)
+            {
+                energyController.StopEnergyDrain();
+                SendMoveCommand();
+                HideMoveArrow();
+                direction = Vector2.zero;
+            }
+        }
     }
 
     public void OnCurl(InputAction.CallbackContext context)
     {
+        if (GameManager.Instance.currentState == State.Execution) return;
+
         if (context.canceled)
         {
             if (energy.value < energyController.EnergyCostCurleToggle) return;
-
+            
             energy.value -= energyController.EnergyCostCurleToggle;
             commandInvoker.AddCommand(new CurlCommand());
         }
@@ -69,15 +98,17 @@ public class MovementController : MonoBehaviour
 
     public void OnSubmitMovement(InputAction.CallbackContext context)
     {
+        if (GameManager.Instance.currentState == State.Execution) return;
+
         if (context.started)
         {
             StartCoroutine(commandInvoker.ExectueAllCommands());
+            isReady = false;
         }
     }
 
     public void SendMoveCommand()
     {
-        print(direction);
         float pressDuration = Time.time - timePressed;
         commandInvoker.AddCommand(new MoveCommand(pressDuration, direction));
         timePressed = 0f;
