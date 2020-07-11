@@ -12,7 +12,8 @@ public class MoveArrow : MonoBehaviour
     {
         var scale = Body.transform.localScale;
         Body.transform.localScale = new Vector3(scale.x, _length * LengthMultiplier, scale.z);
-        Tip.transform.localPosition = new Vector3(0, 0.05f, Body.transform.localScale.y * 0.55f);
+        var tipPosition = Body.GetComponent<SpriteRenderer>().bounds.size;
+        Tip.transform.localPosition = new Vector3(0, 0.05f, tipPosition.magnitude - 0.5f);
     }
     public void SetArrowDirection(Vector3 _direction)
     {

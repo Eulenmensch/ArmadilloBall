@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tip: {fileID: 1762373718514243682}
   Body: {fileID: 1762373718540494391}
-  LengthMultiplier: 1.7
+  LengthMultiplier: 5
 --- !u!1 &1762373718514243682
 GameObject:
   m_ObjectHideFlags: 0
