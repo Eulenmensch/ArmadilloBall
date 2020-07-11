@@ -405,6 +405,7 @@ GameObject:
   - component: {fileID: 1678996511}
   - component: {fileID: 1678996510}
   - component: {fileID: 1678996512}
+  - component: {fileID: 1678996513}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -500,6 +501,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commandInvoker: {fileID: 2002954173}
+  energyController: {fileID: 1678996513}
+  energy: {fileID: 11400000, guid: 9d583a07102a7144c8aca15c6471618d, type: 2}
 --- !u!114 &1678996511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxEnergy: 100
-  currentEnergy: 0
+  currentEnergy: {fileID: 11400000, guid: 9d583a07102a7144c8aca15c6471618d, type: 2}
   moveSpeedCurled: 10
   moveSpeedUncurled: 7
   currentMoveSpeed: 7
@@ -548,6 +551,22 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1678996513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678996505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f03c5e28c6533a49b9e7a43f44af6d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: {fileID: 1678996510}
+  energy: {fileID: 11400000, guid: 9d583a07102a7144c8aca15c6471618d, type: 2}
+  energyCostPerSecond: 5
+  energyCostJump: 0
 --- !u!1 &2002954172
 GameObject:
   m_ObjectHideFlags: 0

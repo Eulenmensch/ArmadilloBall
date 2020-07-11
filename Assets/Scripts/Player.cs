@@ -7,11 +7,12 @@ public class Player : MonoBehaviour
     public static Player Instance => instance;
 
     [SerializeField] private float maxEnergy = 0;
-    public float currentEnergy;
+    [SerializeField] private FloatVariable currentEnergy;
 
     [SerializeField] private float moveSpeedCurled = 0;
     [SerializeField] private float moveSpeedUncurled = 0;
     public float currentMoveSpeed;
+
 
     private void Awake()
     {
@@ -28,6 +29,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        currentEnergy = maxEnergy;
+        currentEnergy.value = maxEnergy;
     }
 }
