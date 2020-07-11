@@ -30,12 +30,12 @@
                     "interactions": ""
                 },
                 {
-                    "name": "TestNiceMan",
+                    "name": "Jump",
                     "type": "Button",
-                    "id": "a052cac9-a553-4c03-8ed7-c9cbdb0ab634",
+                    "id": "65883bc9-6e34-4815-9b96-a864e839c978",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Hold"
                 }
             ],
             "bindings": [
@@ -256,28 +256,6 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "Fire",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b595fead-d3e0-4a82-b956-42995c757f13",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TestNiceMan",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c9218c0f-a323-4a22-a67c-2b9a75df70c6",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TestNiceMan",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
