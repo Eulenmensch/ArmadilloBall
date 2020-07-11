@@ -30,9 +30,17 @@
                     "interactions": ""
                 },
                 {
-                    "name": "TestNiceMan",
+                    "name": "SubmitMovement",
                     "type": "Button",
                     "id": "a052cac9-a553-4c03-8ed7-c9cbdb0ab634",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Curl",
+                    "type": "Button",
+                    "id": "9f745bdb-6d3f-421d-94d5-c7c6e2a9eeb2",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -244,7 +252,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "TestNiceMan",
+                    "action": "SubmitMovement",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -255,7 +263,29 @@
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "TestNiceMan",
+                    "action": "SubmitMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "caa668a0-eb41-49dc-94f3-762c6742f986",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Curl",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "47afd6e9-26f1-4b68-8c89-07e1d8964901",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Curl",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

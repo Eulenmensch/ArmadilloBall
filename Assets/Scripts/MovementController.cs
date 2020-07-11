@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InputTest : MonoBehaviour
+public class MovementController : MonoBehaviour
 {
-    public CommandInvoker commandInvoker;
-    public EnergyController energyController;
-    public FloatVariable energy;
+    [SerializeField] private CommandInvoker commandInvoker = null;
+    [SerializeField] private EnergyController energyController = null;
+    [SerializeField] private FloatVariable energy = null;
 
     private float timePressed;
     private Vector2 direction;
@@ -28,17 +28,19 @@ public class InputTest : MonoBehaviour
             energyController.StopEnergyDrain();
             SendMoveCommand();
         }
-        
     }
 
-    public void OnTestNiceMan()
+    public void OnCurl()
+    {
+        if (energy.value < energyController.EnergyCostCurleToggle) return;
+
+        energy.value -= energyController.EnergyCostCurleToggle;
+        commandInvoker.AddCommand(new CurlCommand());
+    }
+
+    public void OnSubmitMovement()
     {
         StartCoroutine(commandInvoker.ExectueAllCommands());
-    }
-
-    private void Update()
-    {
-        
     }
 
     public void SendMoveCommand()

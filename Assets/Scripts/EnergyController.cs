@@ -3,11 +3,14 @@ using System.Collections;
 
 public class EnergyController : MonoBehaviour
 {
-    [SerializeField] private InputTest input;
+    [SerializeField] private MovementController input = null;
 
-    [SerializeField] private FloatVariable energy;
+    [SerializeField] private FloatVariable energy = null;
     [SerializeField] private float energyCostPerSecond = 0;
     [SerializeField] private float energyCostJump = 0;
+    [SerializeField] private float energyCostCurleToggle = 0;
+
+   public float EnergyCostCurleToggle => energyCostCurleToggle;
 
     private bool isEnergyDraining = false;
 
