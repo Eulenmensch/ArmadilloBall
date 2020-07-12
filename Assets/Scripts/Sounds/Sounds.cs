@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Sounds : MonoBehaviour
 {
@@ -10,6 +8,7 @@ public class Sounds : MonoBehaviour
     private FMOD.Studio.EventInstance RollSound;
     private FMOD.Studio.EventInstance WalkSound;
     private FMOD.Studio.EventInstance DrainingEnergySound;
+    private FMOD.Studio.EventInstance EnergyBurstSound;
 
     private void Start()
     {
@@ -19,6 +18,7 @@ public class Sounds : MonoBehaviour
         RollSound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Gurtel/Gurtel_roll");
         WalkSound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Gurtel/Gurtel_steps");
         DrainingEnergySound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Gurtel/Gurtel_straw");
+        EnergyBurstSound = FMODUnity.RuntimeManager.CreateInstance("event:/Musik/Phase 2");
 
         SoundEventManager.OnCurl += PlayCurlSound;
         SoundEventManager.OnUncurl += PlayUncurlSound;
@@ -28,6 +28,7 @@ public class Sounds : MonoBehaviour
         SoundEventManager.OnActivateDrainingEnergy += PlayDrainingEnergySound;
         SoundEventManager.OnDeactivateDrainingEnergy += StopDrainingEnergySound;
         SoundEventManager.OnChangeEnergyLevel += ChangeEnergyLevel;
+        SoundEventManager.OnPressingCurlButton += PlayEnergyDrainBurst;
     }
 
     private void PlayCurlSound()
@@ -64,5 +65,10 @@ public class Sounds : MonoBehaviour
     private void ChangeEnergyLevel(float value)
     {
         DrainingEnergySound.setParameterByName("energybar", value);
+    }
+
+    private void PlayEnergyDrainBurst()
+    {
+        EnergyBurstSound.start();
     }
 }
