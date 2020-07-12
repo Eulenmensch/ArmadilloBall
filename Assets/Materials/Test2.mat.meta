@@ -1,6 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Materials/Test2.mat.meta
 guid: 9d51d880d3bb4f84ba5a31bd6400ecc1
 NativeFormatImporter:
+=======
+<<<<<<< HEAD
+guid: ce56648c75c9f44b88617c66790ece0b
+=======
+guid: ebb76dc175b1cbd4eac4e0d9702ac47d
+>>>>>>> master
+folderAsset: yes
+DefaultImporter:
+>>>>>>> master:Assets/Music/Gürtel/Plugins.meta
   externalObjects: {}
   mainObjectFileID: 0
   userData: 
