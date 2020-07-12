@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -92,9 +92,9 @@ public class Player : MonoBehaviour
 
     public bool IsFalling()
     {
-        foreach(var contactPoints in collisions)
+        foreach (var contactPoints in collisions)
         {
-            foreach(ContactPoint contactPoint in contactPoints.Value)
+            foreach (ContactPoint contactPoint in contactPoints.Value)
             {
                 if (transform.position.y > contactPoint.point.y)
                     return false;
@@ -111,6 +111,20 @@ public class Player : MonoBehaviour
             {
                 if (transform.position.y > contactPoint.point.y)
                     return contactPoint.normal;
+            }
+        }
+
+        return Vector3.zero;
+    }
+
+    public Vector3 GetGroundPosition()
+    {
+        foreach (var contactPoints in collisions)
+        {
+            foreach (ContactPoint contactPoint in contactPoints.Value)
+            {
+                if (transform.position.y > contactPoint.point.y)
+                    return contactPoint.point;
             }
         }
 
