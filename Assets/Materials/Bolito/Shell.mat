@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glas
+  m_Name: Shell
   m_Shader: {fileID: 4800000, guid: 757cbd28dfbffc54197f6bbbba6692fa, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -61,7 +61,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0
+    - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -74,7 +74,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 0.21041772, g: 0.3042259, b: 0.52771914, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LightColor: {r: 0.34117648, g: 0.5284516, b: 0.6784314, a: 0}
-    - _ShadowColor: {r: 0.17977929, g: 0.21912895, b: 0.3773585, a: 0}
+    - _LightColor: {r: 0.6603774, g: 0.42995512, b: 0.21493416, a: 0}
+    - _ShadowColor: {r: 0.5283019, g: 0.19188322, b: 0.28327018, a: 0}
