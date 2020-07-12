@@ -4,7 +4,7 @@ using Cinemachine;
 public class CameraManager : MonoBehaviour
 {
     [SerializeField] CinemachineVirtualCamera ExecuteCam = null;
-    [SerializeField] CameraController cameraController;
+    [SerializeField] CameraController cameraController = null;
 
     private bool hasBeenCentered = false;
 

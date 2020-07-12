@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: "Assets/Music/G\xFCrtel Kopie/G\xFCrtel.fspro"
-  sourceBankPath: "Assets\\Music\\G\xFCrtel Kopie\\Build"
+  sourceProjectPath: "Assets/Music/G\xFCrtel/G\xFCrtel.fspro"
+  sourceBankPath: "Assets\\Music\\G\xFCrtel\\Build"
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
