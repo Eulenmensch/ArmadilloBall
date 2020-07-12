@@ -96,7 +96,7 @@
 			<value>true</value>
 		</property>
 		<property name="triggerProbability">
-			<value>86.5</value>
+			<value>73</value>
 		</property>
 		<property name="length">
 			<value>1.0159479166666667</value>
@@ -109,6 +109,12 @@
 			<destination>{5136b962-fe55-481b-8220-88e3ef7915b7}</destination>
 			<destination>{806023d3-7170-416b-9d1d-92594b37a4ed}</destination>
 		</relationship>
+		<relationship name="fadeInCurve">
+			<destination>{e4e5d24e-bcd5-46b1-a528-a1cef0532475}</destination>
+		</relationship>
+		<relationship name="fadeOutCurve">
+			<destination>{da066d07-46fd-4e08-aece-57279ef3bba7}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{7532fa12-8d29-4b0a-ab5c-35bf1f579d93}</destination>
 			<destination>{9860db7e-f7e7-4b4f-977a-153c03d8aa63}</destination>
@@ -118,6 +124,9 @@
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{50551a93-b8c3-4271-8b19-33ca551f8343}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{cba64fcb-29d8-4d47-bb90-882688f576fb}</destination>
 		</relationship>
@@ -174,6 +183,22 @@
 			<value>23</value>
 		</property>
 	</object>
+	<object class="FadeCurve" id="{e4e5d24e-bcd5-46b1-a528-a1cef0532475}">
+		<relationship name="startPoint">
+			<destination>{6604358e-be89-4260-ac33-45d805f60497}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{ff1aa273-bbe8-48a1-81c6-9ed85e8a7225}</destination>
+		</relationship>
+	</object>
+	<object class="FadeCurve" id="{da066d07-46fd-4e08-aece-57279ef3bba7}">
+		<relationship name="startPoint">
+			<destination>{1a0c3568-6456-49f9-9a94-84e687ee8e8a}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{909b63cb-e842-46bb-bf92-ce729d59df9b}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{7532fa12-8d29-4b0a-ab5c-35bf1f579d93}">
 		<relationship name="audioFile">
 			<destination>{954f4c92-cc31-47f7-93fc-1bbc4922db4a}</destination>
@@ -183,6 +208,14 @@
 		<relationship name="audioFile">
 			<destination>{42eb3c47-7224-4ac3-903f-c7391edbc71d}</destination>
 		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{50551a93-b8c3-4271-8b19-33ca551f8343}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>19</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{cba64fcb-29d8-4d47-bb90-882688f576fb}">
 		<relationship name="effects">
@@ -199,40 +232,69 @@
 			<destination>{c5499ae7-3e48-473b-b4f4-540a98a76f28}</destination>
 		</relationship>
 	</object>
+	<object class="AutomationPoint" id="{6604358e-be89-4260-ac33-45d805f60497}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.2547189</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{ff1aa273-bbe8-48a1-81c6-9ed85e8a7225}">
+		<property name="position">
+			<value>0.53125</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{1a0c3568-6456-49f9-9a94-84e687ee8e8a}">
+		<property name="position">
+			<value>0.875</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>0.25471893</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{909b63cb-e842-46bb-bf92-ce729d59df9b}">
+		<property name="position">
+			<value>1.0159479166666667</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{75158b6f-a3eb-4412-abe0-fe12a5324f11}" />
 	<object class="ChorusEffect" id="{ee41994a-a368-4926-abf0-2b2beef987d6}">
 		<property name="rate">
-			<value>1.19999993</value>
+			<value>0.00600000005</value>
 		</property>
 		<property name="depth">
-			<value>100</value>
+			<value>0</value>
 		</property>
 		<property name="mix">
-			<value>54</value>
+			<value>0.5</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{9bb9d9dc-b1a3-4da3-be57-54a91c68fa1a}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>lowGain</value>
 		</property>
-		<property name="amount">
-			<value>19.5</value>
-		</property>
 	</object>
 	<object class="RandomizerModulator" id="{293850b7-aa05-43ec-9890-08c66465c8a3}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>midGain</value>
 		</property>
-		<property name="amount">
-			<value>19</value>
-		</property>
 	</object>
 	<object class="RandomizerModulator" id="{c5499ae7-3e48-473b-b4f4-540a98a76f28}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>highGain</value>
-		</property>
-		<property name="amount">
-			<value>23</value>
 		</property>
 	</object>
 </objects>

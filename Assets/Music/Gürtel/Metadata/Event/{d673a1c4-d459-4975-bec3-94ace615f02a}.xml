@@ -170,7 +170,7 @@
 			<value>true</value>
 		</property>
 		<property name="triggerProbability">
-			<value>29</value>
+			<value>12</value>
 		</property>
 		<property name="length">
 			<value>0.34375</value>
@@ -211,7 +211,7 @@
 			<value>true</value>
 		</property>
 		<property name="triggerProbability">
-			<value>23</value>
+			<value>17</value>
 		</property>
 		<property name="start">
 			<value>0.047670527167792798</value>
@@ -241,7 +241,7 @@
 			<value>true</value>
 		</property>
 		<property name="triggerProbability">
-			<value>18</value>
+			<value>15.5</value>
 		</property>
 		<property name="start">
 			<value>0.46875</value>
@@ -288,7 +288,7 @@
 			<value>true</value>
 		</property>
 		<property name="triggerProbability">
-			<value>19</value>
+			<value>15</value>
 		</property>
 		<property name="start">
 			<value>0.21875</value>
@@ -335,7 +335,7 @@
 			<value>true</value>
 		</property>
 		<property name="triggerProbability">
-			<value>42</value>
+			<value>16.5</value>
 		</property>
 		<property name="start">
 			<value>0.375</value>
@@ -415,36 +415,57 @@
 		</property>
 	</object>
 	<object class="SingleSound" id="{a583261b-539b-4b5b-af80-cb9ab3b0acc8}">
+		<property name="startOffset">
+			<value>14</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{ba94d13b-6efe-4d18-abdf-f4d3ec695ee3}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{41db5686-ef14-47af-8fb2-52086921af89}">
+		<property name="startOffset">
+			<value>5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{53822700-b9b2-45f1-86c3-d6acdc54cda3}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{108816e0-c972-4573-9fa4-4c2ef260e797}">
+		<property name="startOffset">
+			<value>7</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{1c2924d0-1bd7-4e5e-ae62-48bc548e803f}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{0b589aab-2556-4bef-a971-a7e7d0c7b95b}">
+		<property name="startOffset">
+			<value>6.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{9e7f6c8f-9e61-4408-97a0-bc5788f966e3}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{e218d770-2a92-47f5-ac97-b8cc8b79d1fc}">
+		<property name="startOffset">
+			<value>15</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{f2028f87-457d-47da-bc19-a4e8ebaaf82f}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{555fdd49-28f5-45ef-9347-c85b74ca8680}">
+		<property name="startOffset">
+			<value>16</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{8ac3143b-a955-4656-8e00-05ac514a3825}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{c960411b-49c1-448d-9591-f1ca2fed06e9}">
+		<property name="startOffset">
+			<value>11</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{db7ef6da-7349-4ebf-9beb-94b46beb8cdb}</destination>
 		</relationship>
