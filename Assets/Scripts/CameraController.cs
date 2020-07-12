@@ -43,4 +43,9 @@ public class CameraController : MonoBehaviour
             transform.DOMove(player.transform.position + Vector3.forward * -ZOffset, RecenterTime, false).SetEase(Ease.InOutCubic);
         }
     }
+
+    public void CenterCameraOnStateChange()
+    {
+        transform.DOMove(player.transform.position + Vector3.forward * -ZOffset, RecenterTime, false).SetEase(Ease.InOutCubic);
+    }
 }
