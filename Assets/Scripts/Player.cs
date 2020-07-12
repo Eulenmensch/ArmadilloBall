@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
-
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
@@ -19,6 +18,8 @@ public class Player : MonoBehaviour
     public bool IsCurled => isCurled;
 
     public Rigidbody rb;
+
+    private Dictionary<Collider, ContactPoint[]> collisions = new Dictionary<Collider, ContactPoint[]>();
 
 
     private void Awake()
@@ -56,5 +57,47 @@ public class Player : MonoBehaviour
     public void ResetEnergyAmount()
     {
         currentEnergy.value = maxEnergy;
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        collisions[collision.collider] = collision.contacts;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        collisions.Remove(collision.collider);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        collisions.Add(collision.collider, collision.contacts);
+    }
+
+    public bool IsFalling()
+    {
+        foreach(var contactPoints in collisions)
+        {
+            foreach(ContactPoint contactPoint in contactPoints.Value)
+            {
+                if (transform.position.y > contactPoint.point.y)
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    public Vector3 GetNormalOfGround()
+    {
+        foreach (var contactPoints in collisions)
+        {
+            foreach (ContactPoint contactPoint in contactPoints.Value)
+            {
+                if (transform.position.y > contactPoint.point.y)
+                    return contactPoint.normal;
+            }
+        }
+
+        return Vector3.zero;
     }
 }

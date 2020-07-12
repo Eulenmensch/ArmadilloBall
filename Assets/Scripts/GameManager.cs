@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FMOD.Studio;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     public event Action OnInputPhase;
     public event Action OnExecutionPhase;
+    public event Action OnWin;
 
     private void Awake()
     {
@@ -56,6 +58,7 @@ public class GameManager : MonoBehaviour
     {
         currentState = State.Win;
         Debug.Log("You won!");
-        StopAllCoroutines();
+        Player.Instance.rb.isKinematic = true;
+        OnWin?.Invoke();
     }
 }

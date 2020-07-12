@@ -16,6 +16,11 @@ public class MovementController : MonoBehaviour
 
     private bool isReady = false;
 
+    private void Start()
+    {
+        GameManager.Instance.OnWin += StopAllCoroutines;
+    }
+
     private void Update()
     {
         if (energy.value > 0.0f && direction.magnitude > 0.0f && isReady)

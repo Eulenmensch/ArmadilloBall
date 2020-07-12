@@ -32,15 +32,8 @@ public class CurlCommand : ICommand
 
     private bool IsOnEvenGround()
     {
-        RaycastHit raycastHit;
-
-        
-
-        if(Physics.Raycast(Player.Instance.transform.position, Vector3.down, out raycastHit, 0.6f))
-        {
-            if (Vector3.Dot(raycastHit.normal, Vector3.up) > 0.99)
+        if (Vector3.Dot(Player.Instance.GetNormalOfGround(), Vector3.up) > 0.99)
                 return true;
-        }
         return false;
     }
 }

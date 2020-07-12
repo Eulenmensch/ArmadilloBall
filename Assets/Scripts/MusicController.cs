@@ -13,6 +13,7 @@ public class MusicController : MonoBehaviour
         executionPhaseMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Musik/Phase 2");
         GameManager.Instance.OnInputPhase += PlayInputPhaseMusic;
         GameManager.Instance.OnExecutionPhase += PlayExecutionPhaseMusic;
+        GameManager.Instance.OnWin += TransitionToWin;
 
         inputPhaseMusic.setParameterByName("egitarre an", 1);
         inputPhaseMusic.setParameterByName("agitarre an", 1);
@@ -32,6 +33,12 @@ public class MusicController : MonoBehaviour
     {
         inputPhaseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         executionPhaseMusic.start();
+    }
+
+    private void TransitionToWin()
+    {
+        executionPhaseMusic.setParameterByName("Phase 2 over", 1);
+        executionPhaseMusic.setParameterByName("Win", 1);
     }
 
 
