@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &708918295852641291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860737526517392823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CollideAgainst:
+    serializedVersion: 2
+    m_Bits: 1
+  m_IgnoreTag: 
+  m_TransparentLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MinimumDistanceFromTarget: 0.1
+  m_AvoidObstacles: 1
+  m_DistanceLimit: 0
+  m_MinimumOcclusionTime: 0
+  m_CameraRadius: 0.1
+  m_Strategy: 1
+  m_MaximumEffort: 4
+  m_SmoothingTime: 0
+  m_Damping: 0
+  m_DampingWhenOccluded: 0
+  m_OptimalTargetDistance: 0
 --- !u!1 &6740596118457299772
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,11 +139,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.00000003612846
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6172117892031609768, guid: 8acc3671d80ca7d4bb2fa88378bc0347, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8acc3671d80ca7d4bb2fa88378bc0347, type: 3}
 --- !u!4 &1860737525499855031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6831101003978472495, guid: 8acc3671d80ca7d4bb2fa88378bc0347,
+    type: 3}
+  m_PrefabInstance: {fileID: 5124631008277953688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1860737526517392823 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6831101005020862767, guid: 8acc3671d80ca7d4bb2fa88378bc0347,
     type: 3}
   m_PrefabInstance: {fileID: 5124631008277953688}
   m_PrefabAsset: {fileID: 0}
