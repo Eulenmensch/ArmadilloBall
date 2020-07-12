@@ -4,21 +4,35 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private FMOD.Studio.EventInstance inputPhaseMusic;
+    private FMOD.Studio.EventInstance executionPhaseMusic;
+
+    private void Start()
     {
-        joo = FMODUnity.RuntimeManager.CreateInstance("event:/Musik/Phase 1");
-        joo.setParameterByName("egitarre an", 1);
-        joo.setParameterByName("horns an", 0);
-        joo.start();
-        
+        inputPhaseMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Musik/Phase 1");
+        executionPhaseMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Musik/Phase 2");
+        GameManager.Instance.OnInputPhase += PlayInputPhaseMusic;
+        GameManager.Instance.OnExecutionPhase += PlayExecutionPhaseMusic;
+
+        inputPhaseMusic.setParameterByName("egitarre an", 1);
+        inputPhaseMusic.setParameterByName("agitarre an", 1);
+        inputPhaseMusic.setParameterByName("horns an", 1);
+
+
+        inputPhaseMusic.start();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void PlayInputPhaseMusic()
     {
-        
+        executionPhaseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        inputPhaseMusic.start();
     }
 
-    public FMOD.Studio.EventInstance joo;
+    private void PlayExecutionPhaseMusic()
+    {
+        inputPhaseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        executionPhaseMusic.start();
+    }
+
+
 }

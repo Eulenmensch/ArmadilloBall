@@ -510,6 +510,9 @@
 		<relationship name="destination">
 			<destination>{eb552551-5621-413a-b8e6-d1426b1c592c}</destination>
 		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{524d9ea3-d67c-4d17-80ea-8764ae098818}</destination>
+		</relationship>
 	</object>
 	<object class="TransitionMarker" id="{0c19deb2-8faa-455a-9676-c9aede45c31a}">
 		<property name="position">
@@ -585,6 +588,17 @@
 		</property>
 		<relationship name="parameter">
 			<destination>{c26a6731-9d6b-4bf7-ac30-b595c7b2acc7}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{524d9ea3-d67c-4d17-80ea-8764ae098818}">
+		<property name="minimum">
+			<value>0.72000002861022949</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{48546e18-1c8d-4dad-8fb2-4416434b8897}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterCondition" id="{a621336d-6d23-4b68-8d29-e38b52b330c3}">

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,6 +18,9 @@ public class GameManager : MonoBehaviour
 
     private int currentTurn = 1;
     public int CurrentTurn => currentTurn;
+
+    public event Action OnInputPhase;
+    public event Action OnExecutionPhase;
 
     private void Awake()
     {
@@ -37,12 +41,15 @@ public class GameManager : MonoBehaviour
     {
         currentState = State.Input;
         Player.Instance.ResetEnergyAmount();
+        OnInputPhase?.Invoke();
+
         currentTurn++;
     }
 
     public void ChangeToExecutionState()
     {
         currentState = State.Execution;
+        OnExecutionPhase?.Invoke();
     }
 
     public void WinGame()
