@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cactus
-    second: {fileID: 2100000, guid: 5f71198c52e55c344a89dfb141eef1cf, type: 2}
+    second: {fileID: 2100000, guid: eacc6aba32e0c224c936557bd1a0fcc2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SpikeTexture
-    second: {fileID: 2100000, guid: 9731b60be2c5a404092c949e15dec16d, type: 2}
+    second: {fileID: 2100000, guid: 68d1768b0eddea64983d90f78a327d61, type: 2}
   materials:
     materialImportMode: 1
     materialName: 3
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
