@@ -54,7 +54,7 @@ PrefabInstance:
     - target: {fileID: 207711002, guid: 8acc3671d80ca7d4bb2fa88378bc0347, type: 3}
       propertyPath: m_LookAt
       value: 
-      objectReference: {fileID: 5124631008342873985}
+      objectReference: {fileID: 5124631009354089533}
     - target: {fileID: 6831101003978472493, guid: 8acc3671d80ca7d4bb2fa88378bc0347,
         type: 3}
       propertyPath: m_Name
@@ -118,12 +118,12 @@ PrefabInstance:
     - target: {fileID: 6831101005020862769, guid: 8acc3671d80ca7d4bb2fa88378bc0347,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000050433204
+      value: 0.0000000504332
       objectReference: {fileID: 0}
     - target: {fileID: 6831101005020862769, guid: 8acc3671d80ca7d4bb2fa88378bc0347,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000036128462
+      value: -0.00000003612846
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8acc3671d80ca7d4bb2fa88378bc0347, type: 3}
@@ -151,12 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b36b14dbcbc90408b67372dfd96d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &5124631008342873985 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 207711001, guid: 8acc3671d80ca7d4bb2fa88378bc0347,
-    type: 3}
-  m_PrefabInstance: {fileID: 5124631008277953688}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6814950132253630315
 PrefabInstance:
   m_ObjectHideFlags: 0
