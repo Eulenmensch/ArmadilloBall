@@ -18,6 +18,7 @@ public class CameraManager : MonoBehaviour
         {
             hasBeenCentered = false;
             ExecuteCam.gameObject.SetActive(true);
+            cameraController.ExecuteCamFollow();
         }
         else
         {

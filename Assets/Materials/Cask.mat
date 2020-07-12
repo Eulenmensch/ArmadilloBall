@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wood
+  m_Name: Cask
   m_Shader: {fileID: 4800000, guid: 757cbd28dfbffc54197f6bbbba6692fa, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -72,9 +72,9 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LightColor: {r: 0.6784314, g: 0.39686874, b: 0.34117648, a: 0}
-    - _ShadowColor: {r: 0.3018868, g: 0.15159382, b: 0.10964756, a: 0}
+    - _LightColor: {r: 0.7169812, g: 0.3687152, b: 0.3009968, a: 0}
+    - _ShadowColor: {r: 0.5471698, g: 0.20389818, b: 0.30789816, a: 0}
