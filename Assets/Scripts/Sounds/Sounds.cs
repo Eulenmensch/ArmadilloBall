@@ -25,7 +25,9 @@ public class Sounds : MonoBehaviour
         SoundEventManager.OnCollision += PlayCollisionSound;
         SoundEventManager.OnRoll += PlayRollSound;
         SoundEventManager.OnWalk += PlayWalkSound;
-        SoundEventManager.OnDrainingEnergy += PlayDrainingEnergySound;
+        SoundEventManager.OnActivateDrainingEnergy += PlayDrainingEnergySound;
+        SoundEventManager.OnDeactivateDrainingEnergy += StopDrainingEnergySound;
+        SoundEventManager.OnChangeEnergyLevel += ChangeEnergyLevel;
     }
 
     private void PlayCurlSound()
@@ -49,8 +51,18 @@ public class Sounds : MonoBehaviour
     {
         WalkSound.start();
     }
-    private void PlayDrainingEnergySound(float amount)
+    private void PlayDrainingEnergySound()
     {
         DrainingEnergySound.start();
+    }
+
+    private void StopDrainingEnergySound()
+    {
+        DrainingEnergySound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
+    private void ChangeEnergyLevel(float value)
+    {
+        DrainingEnergySound.setParameterByName("energybar", value);
     }
 }

@@ -18,10 +18,11 @@ public class EnergyController : MonoBehaviour
         if(isEnergyDraining)
         {
             energy.value -= energyCostPerSecond * Time.deltaTime;
-            if(energy.value <= 0)
+            SoundEventManager.ChangeEnergyLevel((100f - energy.value) / 100f);
+            if (energy.value <= 0)
             {
                 energy.value = 0;
-                isEnergyDraining = false;
+                StopEnergyDrain();
                 input.SendMoveCommand();
             }
         }
@@ -30,11 +31,13 @@ public class EnergyController : MonoBehaviour
     public void StartEnergyDrain()
     {
         isEnergyDraining = true;
+        SoundEventManager.ActivateDrainingEnergy();
     }
 
     public void StopEnergyDrain()
     {
         isEnergyDraining = false;
+        SoundEventManager.DeactivateDrainingEnergy();
     }
 
 }

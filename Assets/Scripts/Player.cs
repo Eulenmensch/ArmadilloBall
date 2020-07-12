@@ -75,7 +75,11 @@ public class Player : MonoBehaviour
     {
         collisions.Add(collision.collider, collision.contacts);
 
-        if (Vector3.Magnitude(collision.relativeVelocity) > 3f)
+
+        var collisionDirection = collision.GetContact(0).normal;
+
+        if (Vector3.Magnitude(collision.relativeVelocity) > 3f
+            && Vector3.Dot(collisionDirection, collision.relativeVelocity.normalized) > 0.5f)
             SoundEventManager.Collision();
     }
 
