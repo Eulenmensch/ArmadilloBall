@@ -129,6 +129,9 @@
 		<property name="length">
 			<value>14.75</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{643523fc-bb79-40c0-a02b-f4a5188376ba}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{7d51a4c3-d97f-4f9b-8530-26f75c758d7e}</destination>
 		</relationship>
@@ -171,6 +174,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{e4e0d1a4-e19d-4b6b-ac0c-81fc85b9dbef}" />
 	<object class="MixerBusFader" id="{edacf191-e79a-4075-b377-f0909a2fd57b}" />
+	<object class="RandomizerModulator" id="{643523fc-bb79-40c0-a02b-f4a5188376ba}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>startOffset</value>
+		</property>
+		<property name="amount">
+			<value>34</value>
+		</property>
+	</object>
 	<object class="Automator" id="{01aa4f83-6c4a-4805-b71c-9242fd18912d}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>volume</value>
@@ -229,7 +240,7 @@
 			<value>0.0037418147801683817</value>
 		</property>
 		<property name="value">
-			<value>-2</value>
+			<value>-16</value>
 		</property>
 		<property name="curveShape">
 			<value>0.442069948</value>
@@ -237,10 +248,10 @@
 	</object>
 	<object class="AutomationPoint" id="{599e9737-3e43-4d8e-a628-49766f1ac0fe}">
 		<property name="position">
-			<value>0.99251637043966323</value>
+			<value>1</value>
 		</property>
 		<property name="value">
-			<value>10</value>
+			<value>-4</value>
 		</property>
 	</object>
 	<object class="Automator" id="{353a25af-ba00-4ba7-a855-99a73f771317}">
@@ -300,7 +311,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>1.48000002</value>
+			<value>1.33999991</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{74e4dc13-bf36-4abb-890e-fab4f0dc9a5d}">
@@ -338,7 +349,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>0.419999987</value>
+			<value>0.319999993</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{99ee8fea-6f69-4066-bdf4-bbe6594cf527}">
@@ -357,7 +368,7 @@
 			<value>0.99625818521983167</value>
 		</property>
 		<property name="value">
-			<value>10</value>
+			<value>7</value>
 		</property>
 	</object>
 </objects>
