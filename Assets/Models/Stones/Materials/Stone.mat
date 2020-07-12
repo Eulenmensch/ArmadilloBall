@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glas
-  m_Shader: {fileID: 4800000, guid: 757cbd28dfbffc54197f6bbbba6692fa, type: 3}
+  m_Name: Stone
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -72,9 +72,6 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - __dirty: 0
     m_Colors:
-    - _Color: {r: 0.21041772, g: 0.3042259, b: 0.52771914, a: 1}
+    - _Color: {r: 0.26676148, g: 0.26676148, b: 0.26676148, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LightColor: {r: 0.34117648, g: 0.5284516, b: 0.6784314, a: 0}
-    - _ShadowColor: {r: 0.17977929, g: 0.21912895, b: 0.3773585, a: 0}
