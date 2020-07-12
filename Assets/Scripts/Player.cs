@@ -46,12 +46,14 @@ public class Player : MonoBehaviour
     {
         isCurled = true;
         rb.isKinematic = false;
+        SoundEventManager.Curl();
     }
 
     public void DeactivateCurlAbility()
     {
         isCurled = false;
         rb.isKinematic = true;
+        SoundEventManager.Uncurl();
     }
 
     public void ResetEnergyAmount()
@@ -72,6 +74,9 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         collisions.Add(collision.collider, collision.contacts);
+
+        if (Vector3.Magnitude(collision.relativeVelocity) > 3f)
+            SoundEventManager.Collision();
     }
 
     public bool IsFalling()
