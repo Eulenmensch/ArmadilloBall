@@ -11,6 +11,7 @@ public class CurlCommand : ICommand
 
     public IEnumerator Execute()
     {
+        Debug.Log("CurlCommand!");
         Player.Instance.ActivateCurlAbility();
 
         //Play Curling Animation
