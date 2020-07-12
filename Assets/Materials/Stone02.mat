@@ -26,5 +26,5 @@ Material:
     m_Floats:
     - __dirty: 0
     m_Colors:
-    - _LightColor: {r: 0.3272729, g: 0.3301887, b: 0.3037113, a: 1}
-    - _ShadowColor: {r: 0.254717, g: 0.13817196, b: 0.21233702, a: 1}
+    - _LightColor: {r: 0.27086052, g: 0.2735849, b: 0.2490655, a: 1}
+    - _ShadowColor: {r: 0.2264151, g: 0.082235664, b: 0.1735493, a: 1}

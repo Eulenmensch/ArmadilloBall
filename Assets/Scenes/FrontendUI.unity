@@ -407,7 +407,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8a22860cf92db3349bd99eaee246752a, type: 3}
-  m_Color: {r: 0.888, g: 0.71514887, b: 0.565656, a: 1}
+  m_Color: {r: 0.3647059, g: 0.30980393, b: 0.2627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -655,7 +655,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bc8d119936d1143468f045be145aacc7, type: 3}
-  m_Color: {r: 0.9686275, g: 0.8980393, b: 0.8313726, a: 1}
+  m_Color: {r: 0.5188679, g: 0.45719117, b: 0.3989409, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -772,7 +772,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 9c669c62f5575bc4c9a483580658309c, type: 3}
-  m_Color: {r: 0.96862745, g: 0.8709898, b: 0.77877647, a: 1}
+  m_Color: {r: 0.52156866, g: 0.45882353, b: 0.4, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -874,6 +874,7 @@ GameObject:
   - component: {fileID: 1106717046}
   - component: {fileID: 1106717048}
   - component: {fileID: 1106717047}
+  - component: {fileID: 1106717049}
   m_Layer: 5
   m_Name: MojitoLiquid
   m_TagString: Untagged
@@ -897,7 +898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 173.9, y: 16}
+  m_AnchoredPosition: {x: 173.90039, y: 16}
   m_SizeDelta: {x: 10.500214, y: 21.850616}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1106717047
@@ -937,6 +938,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106717045}
   m_CullTransparentMesh: 0
+--- !u!114 &1106717049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106717045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03c105c944353c34886a84cb51205489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 11400000, guid: 9d583a07102a7144c8aca15c6471618d, type: 2}
 --- !u!1 &1109500489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1124,7 @@ GameObject:
   - component: {fileID: 1283950935}
   - component: {fileID: 1283950934}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: UICamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1244,7 +1258,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: de4b2ded69cba954da11e2ab2ab37f44, type: 3}
-  m_Color: {r: 0.9686275, g: 0.8235295, b: 0.69803923, a: 1}
+  m_Color: {r: 0.36400002, g: 0.3094737, b: 0.2623158, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1411,7 +1425,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: efcb848c953fc8346b11e1ee12e44e6a, type: 3}
-  m_Color: {r: 0.9686275, g: 0.8980393, b: 0.8313726, a: 1}
+  m_Color: {r: 0.52156866, g: 0.45882353, b: 0.4, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1654,7 +1668,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 8e2c5e0c73247dd4db832cde0e05a853, type: 3}
-  m_Color: {r: 0.9686275, g: 0.8980393, b: 0.8313726, a: 1}
+  m_Color: {r: 0.52156866, g: 0.45882353, b: 0.4, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
