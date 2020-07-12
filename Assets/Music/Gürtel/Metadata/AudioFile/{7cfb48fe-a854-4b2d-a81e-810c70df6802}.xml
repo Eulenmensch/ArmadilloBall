@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{7cfb48fe-a854-4b2d-a81e-810c70df6802}">
+		<property name="assetPath">
+			<value>Win Phase 2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>14.222222222222221</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f0dc3234-f5f0-4d9d-8a45-49ea007f1a5c}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{5cfd5780-8b0a-4ee8-a3f8-0ca2592ba87c}">
+		<property name="assetPath">
+			<value>zapsplat_foley_footstep_single_flip_flop_road_light_sand_covering_017_41378.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.52541666666666664</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f0dc3234-f5f0-4d9d-8a45-49ea007f1a5c}</destination>
+		</relationship>
+	</object>
+</objects>
