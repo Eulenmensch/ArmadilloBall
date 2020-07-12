@@ -37,8 +37,7 @@ public class MusicController : MonoBehaviour
 
     private void TransitionToWin()
     {
-        executionPhaseMusic.setParameterByName("Phase 2 over", 1);
-        executionPhaseMusic.setParameterByName("Win", 1);
+        executionPhaseMusic.setParameterByName("Winning", 1);
     }
 
 
