@@ -35,10 +35,21 @@ public class SoundEventManager : MonoBehaviour
         OnRoll?.Invoke(speed);
     }
 
-    public static event Action<float> OnDrainingEnergy;
-    public static void DrainingEnergy(float amount)
+    public static event Action OnActivateDrainingEnergy;
+    public static void ActivateDrainingEnergy()
     {
-        OnDrainingEnergy?.Invoke(amount);
+        OnActivateDrainingEnergy?.Invoke();
     }
 
+    public static event Action OnDeactivateDrainingEnergy;
+    public static void DeactivateDrainingEnergy()
+    {
+        OnDeactivateDrainingEnergy?.Invoke();
+    }
+
+    public static event Action<float> OnChangeEnergyLevel;
+    public static void ChangeEnergyLevel(float value)
+    {
+        OnChangeEnergyLevel?.Invoke(value);
+    }
 }
