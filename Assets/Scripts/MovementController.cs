@@ -95,7 +95,8 @@ public class MovementController : MonoBehaviour
         if (context.canceled)
         {
             if (energy.value < energyController.EnergyCostCurleToggle) return;
-            
+
+            SoundEventManager.PressingCurlButton();
             energy.value -= energyController.EnergyCostCurleToggle;
             CommandInvoker.Instance.AddCommand(new CurlCommand());
         }

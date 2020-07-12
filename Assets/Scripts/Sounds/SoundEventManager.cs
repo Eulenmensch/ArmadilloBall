@@ -52,4 +52,10 @@ public class SoundEventManager : MonoBehaviour
     {
         OnChangeEnergyLevel?.Invoke(value);
     }
+
+    public static event Action OnPressingCurlButton;
+    public static void PressingCurlButton()
+    {
+        OnPressingCurlButton?.Invoke();
+    }
 }
