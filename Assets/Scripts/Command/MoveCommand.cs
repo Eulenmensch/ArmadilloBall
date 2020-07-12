@@ -31,7 +31,7 @@ public class MoveCommand : ICommand
 
             var direction3D = new Vector3(moveDirection.x, 0, moveDirection.y);
 
-
+            
             direction3D = Vector3.ProjectOnPlane(direction3D, Player.Instance.GetNormalOfGround()).normalized * direction3D.magnitude;
                 
             rb.AddForce(direction3D * Player.Instance.CurrentMoveForce, ForceMode.Acceleration);
@@ -54,14 +54,5 @@ public class MoveCommand : ICommand
         {
             yield return null;
         }      
-    }
-
-    public IEnumerator WaitForEndOfMovement()
-    {
-        while (Vector3.Magnitude(Player.Instance.rb.velocity) > 0.05f)
-        {
-            yield return null;
-        }
-        Player.Instance.rb.isKinematic = true;
     }
 }
