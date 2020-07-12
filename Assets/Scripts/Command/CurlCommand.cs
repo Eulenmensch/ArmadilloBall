@@ -17,17 +17,20 @@ public class CurlCommand : ICommand
         yield return WaitForEndOfMovement();
 
         //Play Uncurling Animation
-
+       
         Player.Instance.DeactivateCurlAbility();
     }
 
     public IEnumerator WaitForEndOfMovement()
     {
-        while(Vector3.Magnitude(Player.Instance.rb.velocity) > 0.1f
+        Physics.gravity *= 2.5f;
+        while (Vector3.Magnitude(Player.Instance.rb.velocity) > 1.5f
             || !IsOnEvenGround())
         {
             yield return null;
         }
+
+        Physics.gravity /= 2.5f;
     }
 
     private bool IsOnEvenGround()
