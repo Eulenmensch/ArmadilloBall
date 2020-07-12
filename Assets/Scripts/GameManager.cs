@@ -13,6 +13,8 @@ public enum State
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
+
+    public SceneLoader sceneLoader;
     public static GameManager Instance => instance;
 
     public State currentState;
@@ -43,6 +45,8 @@ public class GameManager : MonoBehaviour
     {
         currentState = State.Input;
         Player.Instance.ResetEnergyAmount();
+        Player.Instance.GetComponent<Animator>().SetBool("isIdle", true);
+        Player.Instance.GetComponent<Animator>().SetBool("isMove", false);
         OnInputPhase?.Invoke();
 
         currentTurn++;
@@ -51,6 +55,8 @@ public class GameManager : MonoBehaviour
     public void ChangeToExecutionState()
     {
         currentState = State.Execution;
+        Player.Instance.GetComponent<Animator>().SetBool("isIdle", false);
+        Player.Instance.GetComponent<Animator>().SetBool("isMove", true);
         OnExecutionPhase?.Invoke();
     }
 
@@ -60,5 +66,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("You won!");
         Player.Instance.rb.isKinematic = true;
         OnWin?.Invoke();
+        StartCoroutine(LoadLevelInSeconds(5));
+    }
+
+    private IEnumerator LoadLevelInSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        sceneLoader.LoadNextScene();
     }
 }

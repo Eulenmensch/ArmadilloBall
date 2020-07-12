@@ -116,6 +116,8 @@ public class MovementController : MonoBehaviour
 
     public void SendMoveCommand()
     {
+        if (timePressed == 0) return;
+
         float pressDuration = Time.time - timePressed;
         CommandInvoker.Instance.AddCommand(new MoveCommand(pressDuration, direction));
         timePressed = 0f;
