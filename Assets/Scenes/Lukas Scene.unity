@@ -640,7 +640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1502492432
 Transform:
   m_ObjectHideFlags: 0
@@ -674,7 +674,13 @@ MonoBehaviour:
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  Params: []
+  Params:
+  - Name: horns an
+    Value: 1
+  - Name: egitarre an
+    Value: 1
+  - Name: agitarre an
+    Value: 1
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
@@ -687,6 +693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1738636943}
+  - component: {fileID: 1738636944}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -710,6 +717,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738636944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738636942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6bec371ec8fca4eaa9ad742c97188e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hornsAn: 0
 --- !u!1001 &1778287843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -962,7 +982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2093538748
 Transform:
   m_ObjectHideFlags: 0
@@ -991,12 +1011,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/Musik/Phase 2
-  PlayEvent: 11
+  PlayEvent: 2
   StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  Params: []
+  Params:
+  - Name: Phase 2 over
+    Value: 1
+  - Name: 'Win '
+    Value: 1
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
