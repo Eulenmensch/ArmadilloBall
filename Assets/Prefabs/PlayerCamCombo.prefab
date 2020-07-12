@@ -39,22 +39,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2152696484364562203}
     m_Modifications:
-    - target: {fileID: 207711001, guid: 8acc3671d80ca7d4bb2fa88378bc0347, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 207711001, guid: 8acc3671d80ca7d4bb2fa88378bc0347, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.159999
-      objectReference: {fileID: 0}
-    - target: {fileID: 207711002, guid: 8acc3671d80ca7d4bb2fa88378bc0347, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 5124631009354089533}
-    - target: {fileID: 207711002, guid: 8acc3671d80ca7d4bb2fa88378bc0347, type: 3}
-      propertyPath: m_LookAt
-      value: 
-      objectReference: {fileID: 5124631009354089533}
     - target: {fileID: 6831101003978472493, guid: 8acc3671d80ca7d4bb2fa88378bc0347,
         type: 3}
       propertyPath: m_Name
@@ -130,12 +114,6 @@ PrefabInstance:
 --- !u!4 &1860737525499855031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6831101003978472495, guid: 8acc3671d80ca7d4bb2fa88378bc0347,
-    type: 3}
-  m_PrefabInstance: {fileID: 5124631008277953688}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5124631009354089533 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1088125093, guid: 8acc3671d80ca7d4bb2fa88378bc0347,
     type: 3}
   m_PrefabInstance: {fileID: 5124631008277953688}
   m_PrefabAsset: {fileID: 0}
@@ -220,79 +198,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
         type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[15].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[15].m_ActionId
-      value: 1924b2ca-dcae-4ef8-8352-5b8f69b5525a
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[15].m_ActionName
-      value: Player/ResetCamera[/Keyboard/space]
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5124631009354089532}
     - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GetCameraInput
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[15].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[15].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
       propertyPath: m_ActionEvents.Array.data[15].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5124631009354089532}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[15].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RecenterCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233377434529935679, guid: 11fa00ab23cdd884791769f1da222110,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[15].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11fa00ab23cdd884791769f1da222110, type: 3}
 --- !u!4 &1599657499874111081 stripped
