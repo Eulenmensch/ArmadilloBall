@@ -19,4 +19,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
     }
+
+    public void UI()
+    {
+        SceneManager.LoadScene("FrontEndUI", LoadSceneMode.Additive);
+    }
 }

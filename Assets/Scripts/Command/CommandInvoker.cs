@@ -13,7 +13,6 @@ public class CommandInvoker : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {

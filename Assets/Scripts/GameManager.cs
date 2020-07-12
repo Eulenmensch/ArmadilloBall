@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
         }
 
         currentState = State.Input;
+        sceneLoader.UI();
     }
 
     public void ChangeToInputState()
@@ -46,7 +47,11 @@ public class GameManager : MonoBehaviour
         currentState = State.Input;
         Player.Instance.ResetEnergyAmount();
         Player.Instance.GetComponent<Animator>().SetBool("isIdle", true);
+<<<<<<< HEAD
         Player.Instance.GetComponent<Animator>().SetBool("isMove", false);
+=======
+        Player.Instance.GetComponent<Animator>().SetBool("isMoving", false);
+>>>>>>> master
         OnInputPhase?.Invoke();
 
         currentTurn++;
@@ -56,7 +61,11 @@ public class GameManager : MonoBehaviour
     {
         currentState = State.Execution;
         Player.Instance.GetComponent<Animator>().SetBool("isIdle", false);
+<<<<<<< HEAD
         Player.Instance.GetComponent<Animator>().SetBool("isMove", true);
+=======
+        Player.Instance.GetComponent<Animator>().SetBool("isMoving", true);
+>>>>>>> master
         OnExecutionPhase?.Invoke();
     }
 
