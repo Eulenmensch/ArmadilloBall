@@ -16,7 +16,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8329812940046096635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7216938128350775834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,7 +50,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7147669132474463200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   Path: event:/SFX/Gurtel/Gurtel_sniff2
   guid: 1b1153cb9db2ff499ffc95969f061b62
   Banks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -74,6 +74,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1500
+--- !u!114 &-7113390558920121369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 'parameter:/Phase 2/Win '
+  m_EditorClassIdentifier: 
+  Name: 'Win '
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-7076893437279134265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +106,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambi/srong wind
   guid: 796cb8f79fb2ba46a659f873a127da88
   Banks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -97,6 +114,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 58704
+--- !u!114 &-7038130841028662417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: "Assets/Music/G\xFCrtel Kopie/Build/Desktop/Master.bank"
+  SubDir: 
+  lastModified: 637301537215131565
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-6836318028298540509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +148,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-5915828304140184417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,9 +163,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: "Assets/Music/G\xFCrtel Kopie/Build/Desktop/Master.strings.bank"
   SubDir: 
-  lastModified: 637301171920000000
+  lastModified: 637301197256803872
   LoadResult: 0
-  FileSizes: []
+  FileSizes:
+  - Name: Desktop
+    Value: 1412
   Exists: 1
 --- !u!114 &-5805089975096420358
 MonoBehaviour:
@@ -149,6 +186,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-5069399532549501601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phase 1/agitarre an
+  m_EditorClassIdentifier: 
+  Name: agitarre an
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-4916802299619358273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +219,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4781135020278019489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +322,7 @@ MonoBehaviour:
   Path: event:/SFX/Gurtel/Gurtel_steps
   guid: c4a173d659d47549bec394ace615f02a
   Banks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -324,7 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -5915828304140184417}
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   EditorEvents:
   - {fileID: -7147669132474463200}
   - {fileID: 2461557470801443534}
@@ -337,10 +391,10 @@ MonoBehaviour:
   - {fileID: 1280924409449949393}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   StringsBanks:
   - {fileID: -5915828304140184417}
-  stringsBankWriteTime: 637301171920000000
+  stringsBankWriteTime: 637301197256803872
   cacheVersion: 3
 --- !u!114 &168214974208908101
 MonoBehaviour:
@@ -391,7 +445,7 @@ MonoBehaviour:
   Path: event:/SFX/Gurtel/Gurtel_roll
   guid: 7df589d52a1d124aa011c934b76daa9a
   Banks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -414,7 +468,7 @@ MonoBehaviour:
   Path: event:/SFX/Gurtel/Gurtel_collide_rock
   guid: b4f6f68032177949bc7532c5c268f0d6
   Banks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -437,13 +491,13 @@ MonoBehaviour:
   Path: event:/Musik/Phase 2
   guid: d237db65c776dc4588929f84881c5bd1
   Banks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -7216938128350775834}
-  - {fileID: -4916802299619358273}
+  - {fileID: 7122337991241487862}
+  - {fileID: -7113390558920121369}
   MinDistance: 0
   MaxDistance: 0
   Length: 21333
@@ -462,14 +516,14 @@ MonoBehaviour:
   Path: event:/Musik/Phase 1
   guid: 52cf1f8dfa25004c8b6d2d20bd313ca2
   Banks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8332361033026784061}
-  - {fileID: -6836318028298540509}
-  - {fileID: -8329812940046096635}
+  - {fileID: 9040435387678942297}
+  - {fileID: 7328807282029860610}
+  - {fileID: -5069399532549501601}
   MinDistance: 0
   MaxDistance: 0
   Length: 40800
@@ -573,7 +627,7 @@ MonoBehaviour:
   Path: event:/SFX/Gurtel/Gurtel_collide_other
   guid: c0f62ef51dccec4d9ba94bcec19ef8b5
   Banks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -596,7 +650,7 @@ MonoBehaviour:
   Path: event:/SFX/Gurtel/Gurtel_sniff1
   guid: 98ccd4eecdb45c45ba0329756edb9b4a
   Banks:
-  - {fileID: 5159438179918572121}
+  - {fileID: -7038130841028662417}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -621,7 +675,7 @@ MonoBehaviour:
   lastModified: 637301511410000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &7086317982143337594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,6 +693,40 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &7122337991241487862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phase 2/Phase 2 over
+  m_EditorClassIdentifier: 
+  Name: Phase 2 over
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &7328807282029860610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phase 1/egitarre an
+  m_EditorClassIdentifier: 
+  Name: egitarre an
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8569828122902006951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,6 +744,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &9040435387678942297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phase 1/horns an
+  m_EditorClassIdentifier: 
+  Name: horns an
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &9159749495525312832
 MonoBehaviour:
   m_ObjectHideFlags: 0
