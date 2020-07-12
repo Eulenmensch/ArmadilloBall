@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 75c667ca23e2d48d5992999dea259942
+=======
+guid: 88011e632e102804b91ff24d467d3657
+>>>>>>> master
 TextScriptImporter:
   externalObjects: {}
   userData: 
