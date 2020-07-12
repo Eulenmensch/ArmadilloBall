@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &699162156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5440438732421322711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc021c83afd16c44ae8a62af8e7d296, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5233377434529935622
 GameObject:
   m_ObjectHideFlags: 0
@@ -30,6 +18,7 @@ GameObject:
   - component: {fileID: 5233377434529935678}
   - component: {fileID: 5233377434529935677}
   - component: {fileID: 5233377434529935676}
+  - component: {fileID: 8622782368043773324}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -128,6 +117,8 @@ MonoBehaviour:
   maxEnergy: 100
   currentEnergy: {fileID: 11400000, guid: 9d583a07102a7144c8aca15c6471618d, type: 2}
   moveForce: 40
+  uncurled: {fileID: 5440438732421322711}
+  curled: {fileID: 5134450893865355993}
   rb: {fileID: 0}
 --- !u!114 &5233377434529935617
 MonoBehaviour:
@@ -341,6 +332,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Drag: 0.3
   AngularDrag: 0.3
+--- !u!95 &8622782368043773324
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5233377434529935622}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 1fc0708409d1d194d98f5de4a09f1a6d, type: 3}
+  m_Controller: {fileID: 9100000, guid: 00128ec6fedfe5d4e8b865547118fdb6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &699162156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5440438732421322711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc021c83afd16c44ae8a62af8e7d296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5134450892836366982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -554,8 +576,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: BolitoCurled
       objectReference: {fileID: 0}
+    - target: {fileID: 3843912426524594235, guid: a93a8225203ae9b419d0211eb5509fe1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a93a8225203ae9b419d0211eb5509fe1, type: 3}
+--- !u!1 &5134450893865355993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3843912426524594235, guid: a93a8225203ae9b419d0211eb5509fe1,
+    type: 3}
+  m_PrefabInstance: {fileID: 8221719271944575714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5134450893865355992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3843912426524594234, guid: a93a8225203ae9b419d0211eb5509fe1,

@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     [SerializeField] private FloatVariable currentEnergy = null;
     [SerializeField] private float moveForce = 0;
 
+    public GameObject uncurled;
+    public GameObject curled;
+
     private float currentMoveForce = 0;
     public float CurrentMoveForce => currentMoveForce;
 
@@ -45,6 +48,8 @@ public class Player : MonoBehaviour
     public void ActivateCurlAbility()
     {
         isCurled = true;
+        curled.SetActive(true);
+        uncurled.SetActive(false);
         rb.isKinematic = false;
         SoundEventManager.Curl();
     }
@@ -53,6 +58,8 @@ public class Player : MonoBehaviour
     {
         isCurled = false;
         rb.isKinematic = true;
+        curled.SetActive(false);
+        uncurled.SetActive(true);
         SoundEventManager.Uncurl();
     }
 

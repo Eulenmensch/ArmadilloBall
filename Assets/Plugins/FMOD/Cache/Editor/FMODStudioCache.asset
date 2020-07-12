@@ -1,189 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
---- !u!114 &-8198249890254495572
-=======
-<<<<<<< HEAD
---- !u!114 &-9181100771641483330
-=======
-<<<<<<< HEAD
---- !u!114 &-8893305586686651979
-=======
---- !u!114 &-9167706143298784216
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_effort
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_effort
-  guid: be3ac92ca64c0541a399f078ea044e15
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 500
---- !u!114 &-8141534183763510665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Phase 1/agitarre an
-  m_EditorClassIdentifier: 
-  Name: agitarre an
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &-7286847775415727658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Ambi/srong wind
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Ambi/srong wind
-  guid: 796cb8f79fb2ba46a659f873a127da88
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 58704
---- !u!114 &-5752006467996310440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_sniff1
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_sniff1
-  guid: 98ccd4eecdb45c45ba0329756edb9b4a
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4000
---- !u!114 &-5259096125093465079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_steps_sand
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_steps_sand
-  guid: d6650716eb51d949bf61e432bd8064fc
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1695
---- !u!114 &-5123700736996770016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Control/direction_letgo
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Control/direction_letgo
-  guid: 665394fa0acef74087354c8a5284a237
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
---- !u!114 &-4947226751073703973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 'parameter:/Phase 2/Win '
-  m_EditorClassIdentifier: 
-  Name: 'Win '
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &-4864218294514965685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_straw_fast
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_straw_fast
-  guid: c23daff300153740b855cee9dd185532
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 348
---- !u!114 &-4795365780294379760
+--- !u!114 &-8915789006886217611
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,11 +14,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: "Assets/Music/G\xFCrtel/Build/Desktop/Master.bank"
   SubDir: 
-  lastModified: 637301728582793157
+  lastModified: 637301807739201350
   LoadResult: 0
   FileSizes: []
   Exists: 1
---- !u!114 &-4720382759181636369
+--- !u!114 &-8855617920769523929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 'parameter:/Phase 2/Win '
+  m_EditorClassIdentifier: 
+  Name: 'Win '
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-7621451499883358654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: "Assets/Music/G\xFCrtel/Build/Desktop/Master.bank"
+  SubDir: 
+  lastModified: 637301799480580414
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-7426148668768996038
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,7 +70,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &-4390298414587803309
+--- !u!114 &-6887728937616714512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,7 +85,7 @@ MonoBehaviour:
   Path: event:/SFX/Control/direction_charge
   guid: a5c633a407f6054fa628c68bc201542c
   Banks:
-  - {fileID: -4795365780294379760}
+  - {fileID: -8915789006886217611}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -241,7 +93,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 12000
---- !u!114 &-4377385879153402718
+--- !u!114 &-6885926435926495497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -251,20 +103,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_ballin
+  m_Name: event:/Musik/Phase 2
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_ballin
-  guid: d9b45e2db2a44341915efd10ab360d61
+  Path: event:/Musik/Phase 2
+  guid: d237db65c776dc4588929f84881c5bd1
   Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
+  - {fileID: -8915789006886217611}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4283341998923893356}
+  - {fileID: 2358098995460050879}
+  - {fileID: -1917873170839489879}
   MinDistance: 0
   MaxDistance: 0
-  Length: 1374
---- !u!114 &-1311077502595656404
+  Length: 28444
+--- !u!114 &-6332502383735061563
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -281,7 +136,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &-1277217445356773291
+--- !u!114 &-5075347708584477155
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -290,1320 +145,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_roll
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_roll
-  guid: 7df589d52a1d124aa011c934b76daa9a
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4000
---- !u!114 &-530714490805858087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_collide_rock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_collide_rock
-  guid: b4f6f68032177949bc7532c5c268f0d6
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1278
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 7756360285573093155}
-  - {fileID: -4795365780294379760}
-  EditorEvents:
-  - {fileID: 7209982790267611741}
-  - {fileID: 3066232594898622496}
-  - {fileID: 3029387554523740039}
-  - {fileID: -5123700736996770016}
-  - {fileID: 6062693900425582419}
-  - {fileID: -7286847775415727658}
-  - {fileID: 8833892125950677144}
-  - {fileID: -1277217445356773291}
-  - {fileID: -5752006467996310440}
-  - {fileID: -4390298414587803309}
-  - {fileID: -530714490805858087}
-  - {fileID: -8198249890254495572}
-  - {fileID: 8509275306919985235}
-  - {fileID: -4864218294514965685}
-  - {fileID: 4692184457828056636}
-  - {fileID: 811454325871305267}
-  - {fileID: -5259096125093465079}
-  - {fileID: -4377385879153402718}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -4795365780294379760}
-  StringsBanks:
-  - {fileID: 7756360285573093155}
-  stringsBankWriteTime: 637301728579641586
-  cacheVersion: 3
---- !u!114 &811454325871305267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Phase 2
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Phase 2
-  guid: d237db65c776dc4588929f84881c5bd1
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -4720382759181636369}
-  - {fileID: -4947226751073703973}
-  - {fileID: 3526266385370311180}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 28444
---- !u!114 &3029387554523740039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Phase 1
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Phase 1
-  guid: 52cf1f8dfa25004c8b6d2d20bd313ca2
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1311077502595656404}
-  - {fileID: 6181892482766917839}
-  - {fileID: -8141534183763510665}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 50400
---- !u!114 &3066232594898622496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_ballout
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_ballout
-  guid: 22bd69b8f866cd4b8540c8503e5d6dd3
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 875
---- !u!114 &3526266385370311180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Phase 2/Winning
-  m_EditorClassIdentifier: 
-  Name: Winning
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
-<<<<<<< HEAD
---- !u!114 &4692184457828056636
-=======
---- !u!114 &-2307720395715634955
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_steps_rock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_steps_rock
-  guid: 7bab1d6f3b7aef4bacd7c277d59c8a42
-  Banks:
-  - {fileID: -2208554796663283564}
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_steps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_steps
-  guid: c4a173d659d47549bec394ace615f02a
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -4795365780294379760}
-=======
-  - {fileID: 5977650107883805082}
->>>>>>> master
->>>>>>> master
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 460
---- !u!114 &-8487925065200368532
-=======
-  Length: 876
-<<<<<<< HEAD
---- !u!114 &6062693900425582419
-=======
---- !u!114 &-2033970803043896737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Phase 2
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Phase 2
-  guid: d237db65c776dc4588929f84881c5bd1
-  Banks:
-  - {fileID: 5977650107883805082}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7246461352019904688}
-  - {fileID: -7487907441526997002}
-  - {fileID: -8477432397510432003}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 28444
---- !u!114 &-1723675125523558649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_roll
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_roll
-  guid: 7df589d52a1d124aa011c934b76daa9a
-  Banks:
-  - {fileID: 5977650107883805082}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4000
---- !u!114 &-1216673593610819966
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-=======
->>>>>>> master
-  m_Name: event:/Musik/Phase 1
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Name: egitarre an
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-8317768395432237070
-=======
-  Path: event:/Musik/Phase 1
-  guid: 52cf1f8dfa25004c8b6d2d20bd313ca2
-  Banks:
-<<<<<<< HEAD
-  - {fileID: 5977650107883805082}
-=======
-  - {fileID: -3650556936198989008}
->>>>>>> master
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-<<<<<<< HEAD
-  - {fileID: -6231617393081402695}
-  - {fileID: -3709369376508698486}
-  - {fileID: 1206807989536028216}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 50400
---- !u!114 &-613015360251099619
-=======
-  - {fileID: 4574032247182503887}
-  - {fileID: -5064357344181775644}
-  - {fileID: 3206405900475522271}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 50400
---- !u!114 &-412699510356926629
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/Music/Gu\u0308rtel/Build/Desktop/Master.strings.bank"
-  SubDir: 
-  lastModified: 637301789780000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1822
-  Exists: 1
---- !u!114 &-7732844580476249651
-=======
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_sniff1
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_sniff1
-  guid: 98ccd4eecdb45c45ba0329756edb9b4a
-  Banks:
-  - {fileID: 2663088960187539677}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4000
---- !u!114 &-250064002802935421
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_collide_rock
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Name: horns an
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &-5693967222392809298
-=======
-  Path: event:/SFX/Gurtel/Gurtel_collide_rock
-  guid: b4f6f68032177949bc7532c5c268f0d6
-  Banks:
-  - {fileID: 5977650107883805082}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1278
-=======
->>>>>>> master
-  m_Name: event:/SFX/Gurtel/Gurtel_straw
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_straw
-  guid: 78b8b7080acc5f43a600ae1258a0ffca
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7153787421222852918}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 14750
-<<<<<<< HEAD
---- !u!114 &6181892482766917839
-=======
->>>>>>> master
---- !u!114 &11400000
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Phase 1/egitarre an
-  m_EditorClassIdentifier: 
-  Name: egitarre an
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &7153787421222852918
-=======
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Control/direction_letgo
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Control/direction_letgo
-  guid: 665394fa0acef74087354c8a5284a237
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
---- !u!114 &-5509044468483411532
-=======
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-<<<<<<< HEAD
-  - {fileID: 5787107521123656267}
-  - {fileID: 5977650107883805082}
-  EditorEvents:
-  - {fileID: -4395187169602706228}
-  - {fileID: 5357801241912514203}
-  - {fileID: -1216673593610819966}
-  - {fileID: 5075178993777959544}
-  - {fileID: 1457104180512484427}
-  - {fileID: -8741612822347331961}
-  - {fileID: -6158577711588372543}
-  - {fileID: -1723675125523558649}
-  - {fileID: 4044546975733768549}
-  - {fileID: 3649110155051949767}
-  - {fileID: -250064002802935421}
-  - {fileID: 4365770748827123278}
-  - {fileID: 6221283883793262287}
-  - {fileID: -8893305586686651979}
-  - {fileID: -2307720395715634955}
-  - {fileID: -2033970803043896737}
-  - {fileID: -5433379519329323981}
-  - {fileID: 1553440836235034277}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 5977650107883805082}
-  StringsBanks:
-  - {fileID: 5787107521123656267}
-  stringsBankWriteTime: 637301728579641586
-  cacheVersion: 3
---- !u!114 &21363311662162841
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_straw
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_straw
-  guid: 78b8b7080acc5f43a600ae1258a0ffca
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -4023899970838465410}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 14750
---- !u!114 &-4798376223945905720
-=======
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Gurtel_straw/energybar
-  m_EditorClassIdentifier: 
-  Name: energybar
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
-<<<<<<< HEAD
---- !u!114 &7209982790267611741
-=======
---- !u!114 &1161485230214548176
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_sniff2
-=======
-<<<<<<< HEAD
-  m_Name: event:/SFX/Ambi/srong wind
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Ambi/srong wind
-  guid: 796cb8f79fb2ba46a659f873a127da88
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 1
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_straw_fast
->>>>>>> master
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_sniff2
-  guid: 1b1153cb9db2ff499ffc95969f061b62
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
->>>>>>> master
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 1500
---- !u!114 &7756360285573093155
-=======
-<<<<<<< HEAD
-  Length: 58704
---- !u!114 &-4371323875082223763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Phase 1/agitarre an
-  m_EditorClassIdentifier: 
-  Name: agitarre an
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-4023899970838465410
-=======
-  Length: 348
---- !u!114 &1206807989536028216
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/Music/G\xFCrtel/Build/Desktop/Master.strings.bank"
-  SubDir: 
-  lastModified: 637301728579641586
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1822
-  Exists: 1
---- !u!114 &8509275306919985235
-=======
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-<<<<<<< HEAD
-  m_Name: parameter:/Gurtel_straw/energybar
-  m_EditorClassIdentifier: 
-  Name: energybar
-=======
-  m_Name: parameter:/Phase 1/agitarre an
-  m_EditorClassIdentifier: 
-  Name: agitarre an
->>>>>>> master
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
-<<<<<<< HEAD
---- !u!114 &-3886563424520819601
-=======
---- !u!114 &1257635073331334244
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_collide_other
-=======
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_straw_fast
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_straw_fast
-  guid: c23daff300153740b855cee9dd185532
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 348
---- !u!114 &-3157103980419604136
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_effort
->>>>>>> master
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_collide_other
-  guid: c0f62ef51dccec4d9ba94bcec19ef8b5
-  Banks:
-  - {fileID: -4795365780294379760}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 614
---- !u!114 &8833892125950677144
-=======
-  Length: 500
---- !u!114 &1316620464255489800
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_steps_rock
-=======
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_effort
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_effort
-  guid: be3ac92ca64c0541a399f078ea044e15
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 500
---- !u!114 &-3004291600631713724
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_collide_other
->>>>>>> master
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_steps_rock
-  guid: 7bab1d6f3b7aef4bacd7c277d59c8a42
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -4795365780294379760}
-=======
-  - {fileID: 2663088960187539677}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 614
---- !u!114 &1457104180512484427
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_steps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_steps
-  guid: c4a173d659d47549bec394ace615f02a
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 0
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_straw
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_straw
-  guid: 78b8b7080acc5f43a600ae1258a0ffca
-  Banks:
-  - {fileID: 5977650107883805082}
-  IsStream: 1
->>>>>>> master
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 1528195042123643104}
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 876
---- !u!114 &-2780625639862445621
-=======
-  Length: 14750
---- !u!114 &1528195042123643104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Gurtel_straw/energybar
-  m_EditorClassIdentifier: 
-  Name: energybar
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &1553440836235034277
-=======
-  - {fileID: 4307439668309512647}
-  - {fileID: -3650556936198989008}
-  EditorEvents:
-  - {fileID: -1429133775049862491}
-  - {fileID: -8291626082647344503}
-  - {fileID: -719138216747190561}
-  - {fileID: -6858887822680486190}
-  - {fileID: -412699510356926629}
-  - {fileID: -8890151499044090089}
-  - {fileID: 5534066275969036339}
-  - {fileID: 1604233296234894199}
-  - {fileID: 7145490815564887483}
-  - {fileID: -9167706143298784216}
-  - {fileID: -3884664990206261533}
-  - {fileID: 349193384704345358}
-  - {fileID: -1474661811899413459}
-  - {fileID: 829415014434740050}
-  - {fileID: 2529178448242569904}
-  - {fileID: 5687424614838818407}
-  - {fileID: -4724979764510461536}
-  - {fileID: 7169349787573527412}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -3650556936198989008}
-  StringsBanks:
-  - {fileID: 4307439668309512647}
-  stringsBankWriteTime: 637301715926670739
-  cacheVersion: 3
---- !u!114 &349193384704345358
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_ballin
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_ballin
-  guid: d9b45e2db2a44341915efd10ab360d61
-  Banks:
-  - {fileID: 5977650107883805082}
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_effort
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_effort
-  guid: be3ac92ca64c0541a399f078ea044e15
-  Banks:
-  - {fileID: -3650556936198989008}
->>>>>>> master
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 1374
---- !u!114 &2228953955560770601
-=======
-  Length: 500
---- !u!114 &829415014434740050
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Control/direction_charge
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Control/direction_charge
-  guid: a5c633a407f6054fa628c68bc201542c
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 12000
---- !u!114 &-2208554796663283564
-=======
-<<<<<<< HEAD
-  m_Name: event:/SFX/Control/direction_charge
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Control/direction_charge
-  guid: a5c633a407f6054fa628c68bc201542c
-  Banks:
-  - {fileID: 2663088960187539677}
-  IsStream: 1
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_straw_fast
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_straw_fast
-  guid: c23daff300153740b855cee9dd185532
-  Banks:
-  - {fileID: -3650556936198989008}
-  IsStream: 0
->>>>>>> master
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 12000
---- !u!114 &2663088960187539677
-=======
-  Length: 348
---- !u!114 &1227105958187513460
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/Music/Gu\u0308rtel/Build/Desktop/Master.bank"
-  SubDir: 
-<<<<<<< HEAD
-  lastModified: 637301789780000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-1023784886724935453
-=======
-  lastModified: 637301728582793157
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &3649110155051949767
-=======
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 'parameter:/Phase 2/Win '
-  m_EditorClassIdentifier: 
-  Name: 'Win '
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &1604233296234894199
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/Musik/Phase 1
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Phase 1
-  guid: 52cf1f8dfa25004c8b6d2d20bd313ca2
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7732844580476249651}
-  - {fileID: 5138599728902376125}
-  - {fileID: 8889003814686564220}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 50400
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -8317768395432237070}
-  - {fileID: -2208554796663283564}
-  EditorEvents:
-  - {fileID: 1193842403009938011}
-  - {fileID: 6211064498783306052}
-  - {fileID: -1023784886724935453}
-  - {fileID: -5693967222392809298}
-  - {fileID: -5509044468483411532}
-  - {fileID: -4798376223945905720}
-  - {fileID: -9181100771641483330}
-  - {fileID: 3675175021529737176}
-  - {fileID: 8102013402791193752}
-  - {fileID: -2780625639862445621}
-  - {fileID: 5715316104302903743}
-  - {fileID: -3157103980419604136}
-  - {fileID: 2817533408867863174}
-  - {fileID: -3886563424520819601}
-  - {fileID: -3004291600631713724}
-  - {fileID: 2822396270176597950}
-  - {fileID: 5877153258463359231}
-  - {fileID: 476381205449051836}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -2208554796663283564}
-  StringsBanks:
-  - {fileID: -8317768395432237070}
-  stringsBankWriteTime: 637301789780000000
-  cacheVersion: 3
---- !u!114 &476381205449051836
-=======
-<<<<<<< HEAD
-  m_Name: event:/SFX/Control/direction_charge
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Control/direction_charge
-  guid: a5c633a407f6054fa628c68bc201542c
-  Banks:
-  - {fileID: 5977650107883805082}
-  IsStream: 1
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_roll
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_roll
-  guid: 7df589d52a1d124aa011c934b76daa9a
-  Banks:
-  - {fileID: -3650556936198989008}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4000
---- !u!114 &2529178448242569904
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_ballin
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_ballin
-  guid: d9b45e2db2a44341915efd10ab360d61
-  Banks:
-  - {fileID: -2208554796663283564}
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_steps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_steps
-  guid: c4a173d659d47549bec394ace615f02a
-  Banks:
-  - {fileID: -3650556936198989008}
->>>>>>> master
-  IsStream: 0
->>>>>>> master
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 1374
---- !u!114 &1193842403009938011
-=======
-<<<<<<< HEAD
-  Length: 12000
---- !u!114 &3919587831087776630
-=======
-  Length: 876
---- !u!114 &3206405900475522271
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> master
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_sniff2
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_sniff2
-  guid: 1b1153cb9db2ff499ffc95969f061b62
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -2208554796663283564}
-=======
-  - {fileID: 2663088960187539677}
->>>>>>> master
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1500
-<<<<<<< HEAD
---- !u!114 &1867589740190614539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/Music/Gu\u0308rtel/Build/Desktop/Master.bank"
-  SubDir: 
-  lastModified: 637301780120000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &2817533408867863174
-=======
---- !u!114 &4044546975733768549
-=======
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Phase 1/agitarre an
-  m_EditorClassIdentifier: 
-  Name: agitarre an
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &3981776046565444817
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_collide_other
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_collide_other
-  guid: c0f62ef51dccec4d9ba94bcec19ef8b5
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 614
---- !u!114 &2822396270176597950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Phase 2
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Phase 2
-  guid: d237db65c776dc4588929f84881c5bd1
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 8615787465172249746}
-  - {fileID: 3482084556345307951}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 28444
---- !u!114 &3482084556345307951
-=======
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_sniff1
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_sniff1
-  guid: 98ccd4eecdb45c45ba0329756edb9b4a
-  Banks:
-  - {fileID: 5977650107883805082}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4000
---- !u!114 &4365770748827123278
-=======
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Phase 2/Phase 2 over
-  m_EditorClassIdentifier: 
-  Name: Phase 2 over
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &4307439668309512647
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 'parameter:/Phase 2/Win '
-  m_EditorClassIdentifier: 
-  Name: 'Win '
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &3675175021529737176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_roll
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_roll
-  guid: 7df589d52a1d124aa011c934b76daa9a
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 1
-  Is3D: 1
-=======
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Gurtel/Gurtel_effort
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_effort
-  guid: be3ac92ca64c0541a399f078ea044e15
-  Banks:
-  - {fileID: 5977650107883805082}
-  IsStream: 0
-  Is3D: 0
->>>>>>> master
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 4000
---- !u!114 &4361615622886686241
-=======
-  Length: 500
---- !u!114 &4916969053915588153
-=======
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/Music/G\xFCrtel/Build/Desktop/Master.strings.bank"
-  SubDir: 
-  lastModified: 637301715926670739
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1822
-  Exists: 1
---- !u!114 &4574032247182503887
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/SFX/Gurtel/Gurtel_steps_rock
   m_EditorClassIdentifier: 
   Path: event:/SFX/Gurtel/Gurtel_steps_rock
   guid: 7bab1d6f3b7aef4bacd7c277d59c8a42
   Banks:
-  - {fileID: 2663088960187539677}
->>>>>>> master
+  - {fileID: -8915789006886217611}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1611,21 +159,85 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 460
-<<<<<<< HEAD
-=======
---- !u!114 &5036194931648299822
-=======
->>>>>>> master
+--- !u!114 &-4552921184894500007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Phase 1/horns an
+  m_Name: parameter:/Gurtel_straw/energybar
   m_EditorClassIdentifier: 
-  Name: horns an
+  Name: energybar
   Min: 0
   Max: 1
   Default: 0
-<<<<<<< HEAD
-  Exists: 0
---- !u!114 &5138599728902376125
+  Exists: 1
+--- !u!114 &-3447280920055306068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: "Assets/Music/G\xFCrtel/Build/Desktop/Master.strings.bank"
+  SubDir: 
+  lastModified: 637301807739301066
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1868
+  Exists: 1
+--- !u!114 &-3121571615146876548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Gurtel_straw/energybar
+  m_EditorClassIdentifier: 
+  Name: energybar
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-3089675784456439295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_straw
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gurtel/Gurtel_straw
+  guid: 78b8b7080acc5f43a600ae1258a0ffca
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3121571615146876548}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14750
+--- !u!114 &-2939146620994339242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1642,12 +254,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &5715316104302903743
-=======
-  Exists: 1
---- !u!114 &5534066275969036339
->>>>>>> master
->>>>>>> master
+--- !u!114 &-1917873170839489879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1656,197 +263,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_collide_rock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_collide_rock
-  guid: b4f6f68032177949bc7532c5c268f0d6
-  Banks:
-  - {fileID: -2208554796663283564}
-=======
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_ballout
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_ballout
-  guid: 22bd69b8f866cd4b8540c8503e5d6dd3
-  Banks:
-  - {fileID: 2663088960187539677}
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_steps_rock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_steps_rock
-  guid: 7bab1d6f3b7aef4bacd7c277d59c8a42
-  Banks:
-  - {fileID: -3650556936198989008}
->>>>>>> master
->>>>>>> master
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 1278
---- !u!114 &5784382016548070043
-=======
-<<<<<<< HEAD
-  Length: 875
---- !u!114 &5075178993777959544
-=======
-  Length: 460
---- !u!114 &5687424614838818407
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Phase 2/Phase 2 over
-  m_EditorClassIdentifier: 
-  Name: Phase 2 over
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &5877153258463359231
-=======
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Control/direction_letgo
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Control/direction_letgo
-  guid: 665394fa0acef74087354c8a5284a237
-  Banks:
-  - {fileID: 5977650107883805082}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
---- !u!114 &5357801241912514203
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_steps_sand
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_steps_sand
-  guid: d6650716eb51d949bf61e432bd8064fc
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1695
---- !u!114 &6211064498783306052
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_ballout
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_ballout
-  guid: 22bd69b8f866cd4b8540c8503e5d6dd3
-  Banks:
-  - {fileID: 5977650107883805082}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 875
---- !u!114 &5747092917705403843
-=======
-  m_Name: event:/Musik/Phase 2
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Phase 2
-  guid: d237db65c776dc4588929f84881c5bd1
-  Banks:
-  - {fileID: -3650556936198989008}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 3981776046565444817}
-  - {fileID: 1227105958187513460}
-  - {fileID: 9062123292345851970}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 28444
---- !u!114 &7145490815564887483
->>>>>>> master
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_ballout
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_ballout
-  guid: 22bd69b8f866cd4b8540c8503e5d6dd3
-  Banks:
-  - {fileID: -2208554796663283564}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 875
---- !u!114 &7377980463217496365
-=======
-<<<<<<< HEAD
-  m_Name: event:/Musik/Phase 1
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Phase 1
-  guid: 52cf1f8dfa25004c8b6d2d20bd313ca2
-  Banks:
-  - {fileID: 2663088960187539677}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7573338497459431906}
-  - {fileID: -8078194663590207674}
-  - {fileID: -2855919743818982643}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 50400
---- !u!114 &5787107521123656267
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Phase 2/Winning
   m_EditorClassIdentifier: 
@@ -1854,22 +270,8 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 0
---- !u!114 &7436619362604431888
-=======
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/Music/G\xFCrtel/Build/Desktop/Master.strings.bank"
-  SubDir: 
-  lastModified: 637301728579641586
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1822
   Exists: 1
---- !u!114 &5977650107883805082
->>>>>>> master
+--- !u!114 &-1080152397166246313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1878,7 +280,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Phase 1/horns an
   m_EditorClassIdentifier: 
@@ -1886,36 +287,8 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 0
---- !u!114 &8102013402791193752
-=======
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/Music/G\xFCrtel/Build/Desktop/Master.bank"
-  SubDir: 
-  lastModified: 637301728582793157
-  LoadResult: 0
-  FileSizes: []
   Exists: 1
---- !u!114 &6221283883793262287
-=======
-  m_Name: event:/SFX/Gurtel/Gurtel_sniff1
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_sniff1
-  guid: 98ccd4eecdb45c45ba0329756edb9b4a
-  Banks:
-  - {fileID: -3650556936198989008}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4000
---- !u!114 &7169349787573527412
->>>>>>> master
->>>>>>> master
+--- !u!114 &-425577460716511888
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1925,43 +298,84 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/SFX/Gurtel/Gurtel_sniff1
+  m_Name: event:/SFX/Gurtel/Gurtel_sniff2
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Gurtel/Gurtel_sniff1
-  guid: 98ccd4eecdb45c45ba0329756edb9b4a
+  Path: event:/SFX/Gurtel/Gurtel_sniff2
+  guid: 1b1153cb9db2ff499ffc95969f061b62
   Banks:
-  - {fileID: -2208554796663283564}
-=======
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -3447280920055306068}
+  - {fileID: -8915789006886217611}
+  EditorEvents:
+  - {fileID: -425577460716511888}
+  - {fileID: 5924154998364303989}
+  - {fileID: 3239927141694569758}
+  - {fileID: 3373655879087999529}
+  - {fileID: -3089675784456439295}
+  - {fileID: 7477192733664894376}
+  - {fileID: -5075347708584477155}
+  - {fileID: 9084371046598827971}
+  - {fileID: 3959902010747083726}
+  - {fileID: -6887728937616714512}
+  - {fileID: 5892723787005569455}
+  - {fileID: 5054323628746365825}
+  - {fileID: 1538374044911034341}
+  - {fileID: 5381100551194078661}
+  - {fileID: 2043841109090068420}
+  - {fileID: -6885926435926495497}
+  - {fileID: 2795444600759368608}
+  - {fileID: 7634463236797722099}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -8915789006886217611}
+  StringsBanks:
+  - {fileID: -3447280920055306068}
+  stringsBankWriteTime: 637301807739301066
+  cacheVersion: 3
+--- !u!114 &1538374044911034341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/SFX/Gurtel/Gurtel_collide_other
   m_EditorClassIdentifier: 
   Path: event:/SFX/Gurtel/Gurtel_collide_other
   guid: c0f62ef51dccec4d9ba94bcec19ef8b5
   Banks:
-<<<<<<< HEAD
-  - {fileID: 5977650107883805082}
-=======
-  - {fileID: -3650556936198989008}
->>>>>>> master
->>>>>>> master
+  - {fileID: -8915789006886217611}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-<<<<<<< HEAD
-  Length: 4000
---- !u!114 &8615787465172249746
-=======
-<<<<<<< HEAD
   Length: 614
---- !u!114 &7573338497459431906
-=======
-  Length: 1374
---- !u!114 &9062123292345851970
->>>>>>> master
->>>>>>> master
+--- !u!114 &2043841109090068420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1970,54 +384,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-<<<<<<< HEAD
-  m_Name: parameter:/Phase 2/Phase 2 over
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_steps
   m_EditorClassIdentifier: 
-  Name: Phase 2 over
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &8889003814686564220
-=======
-  m_Name: parameter:/Phase 2/Winning
-  m_EditorClassIdentifier: 
-  Name: Winning
-  Min: 0
-  Max: 1
-  Default: 0
-<<<<<<< HEAD
-  Exists: 1
---- !u!114 &7587407021209831932
->>>>>>> master
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-<<<<<<< HEAD
-  m_Name: parameter:/Phase 1/agitarre an
-  m_EditorClassIdentifier: 
-  Name: agitarre an
-=======
-  m_Name: parameter:/Phase 2/Phase 2 over
-  m_EditorClassIdentifier: 
-  Name: Phase 2 over
->>>>>>> master
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
-<<<<<<< HEAD
---- !u!114 &9156134150855385988
-=======
---- !u!114 &9071777344361705054
->>>>>>> master
+  Path: event:/SFX/Gurtel/Gurtel_steps
+  guid: c4a173d659d47549bec394ace615f02a
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 876
+--- !u!114 &2358098995460050879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2033,11 +414,328 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-<<<<<<< HEAD
-  Exists: 0
-=======
-=======
->>>>>>> master
   Exists: 1
->>>>>>> master
->>>>>>> master
+--- !u!114 &2795444600759368608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_steps_sand
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gurtel/Gurtel_steps_sand
+  guid: d6650716eb51d949bf61e432bd8064fc
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1695
+--- !u!114 &3239927141694569758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Phase 1
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Phase 1
+  guid: 52cf1f8dfa25004c8b6d2d20bd313ca2
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1080152397166246313}
+  - {fileID: 6063256423907140046}
+  - {fileID: 8872423329051156758}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50400
+--- !u!114 &3373655879087999529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Control/direction_letgo
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Control/direction_letgo
+  guid: 665394fa0acef74087354c8a5284a237
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &3959902010747083726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_sniff1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gurtel/Gurtel_sniff1
+  guid: 98ccd4eecdb45c45ba0329756edb9b4a
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &4283341998923893356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phase 2/Phase 2 over
+  m_EditorClassIdentifier: 
+  Name: Phase 2 over
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &5054323628746365825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_effort
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gurtel/Gurtel_effort
+  guid: be3ac92ca64c0541a399f078ea044e15
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
+--- !u!114 &5381100551194078661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_straw_fast
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gurtel/Gurtel_straw_fast
+  guid: c23daff300153740b855cee9dd185532
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 348
+--- !u!114 &5892723787005569455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_collide_rock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gurtel/Gurtel_collide_rock
+  guid: b4f6f68032177949bc7532c5c268f0d6
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1278
+--- !u!114 &5924154998364303989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_ballout
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gurtel/Gurtel_ballout
+  guid: 22bd69b8f866cd4b8540c8503e5d6dd3
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 875
+--- !u!114 &6063256423907140046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phase 1/egitarre an
+  m_EditorClassIdentifier: 
+  Name: egitarre an
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &6482595947352163573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phase 1/agitarre an
+  m_EditorClassIdentifier: 
+  Name: agitarre an
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &7477192733664894376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambi/srong wind
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambi/srong wind
+  guid: 796cb8f79fb2ba46a659f873a127da88
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 58704
+--- !u!114 &7634463236797722099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_ballin
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gurtel/Gurtel_ballin
+  guid: d9b45e2db2a44341915efd10ab360d61
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1374
+--- !u!114 &8872423329051156758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phase 1/agitarre an
+  m_EditorClassIdentifier: 
+  Name: agitarre an
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &9084371046598827971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gurtel/Gurtel_roll
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gurtel/Gurtel_roll
+  guid: 7df589d52a1d124aa011c934b76daa9a
+  Banks:
+  - {fileID: -8915789006886217611}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000

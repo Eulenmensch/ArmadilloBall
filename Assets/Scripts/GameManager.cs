@@ -13,6 +13,8 @@ public enum State
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
+
+    public SceneLoader sceneLoader;
     public static GameManager Instance => instance;
 
     public State currentState;
@@ -70,6 +72,6 @@ public class GameManager : MonoBehaviour
     private IEnumerator LoadLevelInSeconds(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        //SceneLoader.
+        sceneLoader.LoadNextScene();
     }
 }
