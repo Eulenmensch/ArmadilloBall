@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{0d24fdcc-8638-4c7b-af35-78241630836d}">
+		<property name="assetPath">
+			<value>Mexico ambi.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>78.857312500000006</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f0dc3234-f5f0-4d9d-8a45-49ea007f1a5c}</destination>
+		</relationship>
+	</object>
+</objects>
