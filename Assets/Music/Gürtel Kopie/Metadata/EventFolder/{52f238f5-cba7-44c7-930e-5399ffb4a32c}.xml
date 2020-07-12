@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EventFolder" id="{52f238f5-cba7-44c7-930e-5399ffb4a32c}">
+		<property name="name">
+			<value>Gurtel</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b89434b0-b54e-4cb7-83d0-a3ef7f8763b6}</destination>
+		</relationship>
+	</object>
+</objects>
