@@ -106,7 +106,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4481068368751992034}
   m_LocalRotation: {x: -0.66482985, y: -0.6943973, z: -0.1939753, w: 0.19541594}
-  m_LocalPosition: {x: 79.47691, y: 32.47002, z: 7.0146484}
+  m_LocalPosition: {x: 79.49, y: 35.68, z: 9.87}
   m_LocalScale: {x: 51.146706, y: 51.14671, z: 51.14671}
   m_Children: []
   m_Father: {fileID: 1781752370437932295}
@@ -456,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1781752370437932295}
   m_Layer: 0
-  m_Name: Cactus 1
+  m_Name: Cactus_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,17 +492,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 54c8f26640f8a534a826881c65cf0cac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 80.696915
+      value: 80.3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 54c8f26640f8a534a826881c65cf0cac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 31.22002
+      value: 31.24
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 54c8f26640f8a534a826881c65cf0cac,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.2246475
+      value: 6.88
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 54c8f26640f8a534a826881c65cf0cac,
         type: 3}
