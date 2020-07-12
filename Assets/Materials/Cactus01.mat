@@ -10,7 +10,7 @@ Material:
   m_Name: Cactus01
   m_Shader: {fileID: 4800000, guid: 757cbd28dfbffc54197f6bbbba6692fa, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -27,4 +27,4 @@ Material:
     - __dirty: 0
     m_Colors:
     - _LightColor: {r: 0.4422158, g: 0.601, b: 0.23138496, a: 1}
-    - _ShadowColor: {r: 0.09504307, g: 0.44099995, b: 0.14826724, a: 1}
+    - _ShadowColor: {r: 0.18534178, g: 0.44901195, b: 0.46226418, a: 1}
