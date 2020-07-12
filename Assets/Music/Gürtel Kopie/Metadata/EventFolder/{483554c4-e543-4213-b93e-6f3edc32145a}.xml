@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EventFolder" id="{483554c4-e543-4213-b93e-6f3edc32145a}">
+		<property name="name">
+			<value>Ambi</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b89434b0-b54e-4cb7-83d0-a3ef7f8763b6}</destination>
+		</relationship>
+	</object>
+</objects>
