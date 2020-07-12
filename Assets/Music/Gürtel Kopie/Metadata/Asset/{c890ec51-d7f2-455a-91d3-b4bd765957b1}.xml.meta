@@ -1,8 +1,6 @@
 fileFormatVersion: 2
-guid: 7e10c717d9bde604682ec5551f623a27
-labels:
-- FMOD
-DefaultImporter:
+guid: 2beca15c057617045ad207391fa71753
+TextScriptImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
