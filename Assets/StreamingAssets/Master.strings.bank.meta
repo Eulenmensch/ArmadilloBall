@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 guid: 9d2ed48c144e8424ba4d3c06a074fb21
-=======
-guid: c351beb5ac3f3894fae4be527729e27a
->>>>>>> Stashed changes
-=======
-guid: c351beb5ac3f3894fae4be527729e27a
->>>>>>> master
 labels:
 - FMOD
 DefaultImporter:

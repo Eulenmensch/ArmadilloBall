@@ -9,6 +9,8 @@ public class Sounds : MonoBehaviour
     private FMOD.Studio.EventInstance WalkSound;
     private FMOD.Studio.EventInstance DrainingEnergySound;
     private FMOD.Studio.EventInstance EnergyBurstSound;
+    private FMOD.Studio.EventInstance ChargingArrowSound;
+    private FMOD.Studio.EventInstance SubmitSound;
 
     private void Start()
     {
@@ -18,7 +20,9 @@ public class Sounds : MonoBehaviour
         RollSound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Gurtel/Gurtel_roll");
         WalkSound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Gurtel/Gurtel_steps");
         DrainingEnergySound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Gurtel/Gurtel_straw");
-        EnergyBurstSound = FMODUnity.RuntimeManager.CreateInstance("event:/Musik/Phase 2");
+        EnergyBurstSound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Gurtel/Gurtel_straw_fast");
+        ChargingArrowSound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Control/direction_charge");
+        SubmitSound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Control/direction_letgo");
 
         SoundEventManager.OnCurl += PlayCurlSound;
         SoundEventManager.OnUncurl += PlayUncurlSound;
@@ -29,6 +33,7 @@ public class Sounds : MonoBehaviour
         SoundEventManager.OnDeactivateDrainingEnergy += StopDrainingEnergySound;
         SoundEventManager.OnChangeEnergyLevel += ChangeEnergyLevel;
         SoundEventManager.OnPressingCurlButton += PlayEnergyDrainBurst;
+
     }
 
     private void PlayCurlSound()
@@ -55,11 +60,14 @@ public class Sounds : MonoBehaviour
     private void PlayDrainingEnergySound()
     {
         DrainingEnergySound.start();
+        ChargingArrowSound.start();
     }
 
     private void StopDrainingEnergySound()
     {
         DrainingEnergySound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        ChargingArrowSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        SubmitSound.start();
     }
 
     private void ChangeEnergyLevel(float value)
@@ -70,5 +78,6 @@ public class Sounds : MonoBehaviour
     private void PlayEnergyDrainBurst()
     {
         EnergyBurstSound.start();
+        SubmitSound.start();
     }
 }
