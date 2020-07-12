@@ -85,6 +85,7 @@ public class MovementController : MonoBehaviour
     public void OnCurl(InputAction.CallbackContext context)
     {
         if (GameManager.Instance.currentState != State.Input) return;
+        if (arrow != null) return;
 
         if (context.canceled)
         {

@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private float SmoothTime;
+    [SerializeField] private float SmoothTime = 0;
     private Vector3 inputVector;
     private Vector3 vector;
     void LateUpdate()
