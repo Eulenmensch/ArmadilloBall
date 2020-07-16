@@ -7,6 +7,12 @@ public class MusicController : MonoBehaviour
     private FMOD.Studio.EventInstance inputPhaseMusic;
     private FMOD.Studio.EventInstance executionPhaseMusic;
 
+    private void OnDisable()
+    {
+        inputPhaseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        executionPhaseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
+    }
     private void Start()
     {
         inputPhaseMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Musik/Phase 1");
