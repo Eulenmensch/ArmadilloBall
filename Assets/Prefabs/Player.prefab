@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ed75ea6dcbe9b488e3567d86baf716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEnergy: 100
+  maxEnergy: 70
   currentEnergy: {fileID: 11400000, guid: 9d583a07102a7144c8aca15c6471618d, type: 2}
   moveForce: 40
   uncurled: {fileID: 5440438732421322711}
