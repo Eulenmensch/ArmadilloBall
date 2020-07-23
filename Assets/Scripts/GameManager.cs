@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum State
 {
@@ -10,6 +11,7 @@ public enum State
     Execution,
     Win
 }
+
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
@@ -25,6 +27,10 @@ public class GameManager : MonoBehaviour
     public event Action OnInputPhase;
     public event Action OnExecutionPhase;
     public event Action OnWin;
+
+    [SerializeField] private int turnsForBronze = 4;
+    [SerializeField] private int turnsForSilver = 3;
+    [SerializeField] private int turnsForGold = 2;
 
     private void Awake()
     {
@@ -62,11 +68,41 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
+        Rating rating = CheckRating();
+        int levelNumber = SceneManager.GetActiveScene().buildIndex;
+        GameState.Instance.SetLevelRating(levelNumber, rating);
+
         currentState = State.Win;
         Debug.Log("You won!");
         Player.Instance.rb.isKinematic = true;
         OnWin?.Invoke();
-        StartCoroutine(LoadLevelInSeconds(5));
+        StartCoroutine(LoadLevelInSeconds(5));   
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Will quit in actual build");
+        Application.Quit();
+    }
+
+    private Rating CheckRating()
+    {
+        if(currentTurn <= turnsForGold)
+        {
+            return Rating.Gold;
+        }
+        else if (currentTurn <= turnsForSilver)
+        {
+            return Rating.Silver;
+        }
+        else if(currentTurn <= turnsForBronze)
+        {
+            return Rating.Bronze;
+        }
+        else
+        {
+            return Rating.Unfinished;
+        }
     }
 
     private IEnumerator LoadLevelInSeconds(float seconds)
