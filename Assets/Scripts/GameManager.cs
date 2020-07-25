@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public enum State
@@ -32,6 +33,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int turnsForSilver = 3;
     [SerializeField] private int turnsForGold = 2;
 
+    [SerializeField] private PlayableAsset flyThroughAsset;
+
     private void Awake()
     {
         if (instance == null)
@@ -45,6 +48,7 @@ public class GameManager : MonoBehaviour
 
         currentState = State.Input;
         sceneLoader.UI();
+        FreezeInputForSeconds(3);//TODO flyThroughAsset.duration instead of fixed time
     }
 
     public void ChangeToInputState()
@@ -69,7 +73,7 @@ public class GameManager : MonoBehaviour
     public void WinGame()
     {
         Rating rating = CheckRating();
-        int levelNumber = SceneManager.GetActiveScene().buildIndex;
+        int levelNumber = SceneManager.GetActiveScene().buildIndex - 1;
         GameState.Instance.SetLevelRating(levelNumber, rating);
 
         currentState = State.Win;
@@ -103,6 +107,11 @@ public class GameManager : MonoBehaviour
         {
             return Rating.Unfinished;
         }
+    }
+
+    private void FreezeInputForSeconds(float duration)
+    {
+        //TODO: Freeze the Input while camera flythrough
     }
 
     private IEnumerator LoadLevelInSeconds(float seconds)

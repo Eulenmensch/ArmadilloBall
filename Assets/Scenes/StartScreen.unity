@@ -2257,9 +2257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d086dc9c25442418fb96cf99c6bdc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ratingLevel1: 3
-  ratingLevel2: 3
-  ratingLevel3: 3
+  scencesWhichAreNoLevels: 3
+  levelRatings: 
 --- !u!4 &761432150
 Transform:
   m_ObjectHideFlags: 0

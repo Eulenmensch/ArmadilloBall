@@ -7,15 +7,13 @@ public class GameState : MonoBehaviour
 {
     private static GameState instance;
     public static GameState Instance => instance;
-    [SerializeField] private int scencesWhichAreNoLevels;
-
     public List<Rating> levelRatings = new List<Rating>();
 
     private void Awake()
     {
         // scenes which are no levels should not be taken into account.
         // adjust in editor when non-levels are added to the build-settings
-        for(int i = 0; i < SceneManager.sceneCountInBuildSettings - scencesWhichAreNoLevels; i++)
+        for(int i = 0; i < SceneManager.sceneCountInBuildSettings - 3; i++)
         {
             levelRatings.Add(Rating.Unfinished);
         }
