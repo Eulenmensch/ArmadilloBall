@@ -2485,6 +2485,12 @@ PrefabInstance:
       propertyPath: turnsForBronze
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8197205684457627354, guid: 7c902e30455e97f429ace101511dd210,
+        type: 3}
+      propertyPath: flyThroughAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 73855e5efa55692438fb60cc20a2bf76,
+        type: 2}
     - target: {fileID: 8197205684457627355, guid: 7c902e30455e97f429ace101511dd210,
         type: 3}
       propertyPath: m_Name

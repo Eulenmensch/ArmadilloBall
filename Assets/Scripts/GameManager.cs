@@ -10,7 +10,8 @@ public enum State
 {
     Input,
     Execution,
-    Win
+    Win,
+    FlyThrough
 }
 
 public class GameManager : MonoBehaviour
@@ -45,10 +46,22 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        currentState = State.Input;
         sceneLoader.UI();
-        FreezeInputForSeconds(3);//TODO flyThroughAsset.duration instead of fixed time
+        SetStartState();
+    }
+
+    private void SetStartState()
+    {
+        if (flyThroughAsset)
+        {
+            currentState = State.FlyThrough;
+            StartCoroutine(FreezeInputForSeconds((float)flyThroughAsset.duration));
+        }
+        else
+        {
+            Debug.LogWarning("Please assign a playable asset in the GameManager if you wish to perform a level-flythrough");
+            currentState = State.Input;
+        }
     }
 
     public void ChangeToInputState()
@@ -109,9 +122,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void FreezeInputForSeconds(float duration)
+    private IEnumerator FreezeInputForSeconds(float seconds)
     {
-        //TODO: Freeze the Input while camera flythrough
+        print(currentState);
+        yield return new WaitForSeconds(seconds);
+        currentState = State.Input;
+        print(currentState);
     }
 
     private IEnumerator LoadLevelInSeconds(float seconds)
