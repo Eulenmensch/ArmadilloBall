@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shell
-  m_Shader: {fileID: 4800000, guid: b042398d9d6f7ac43817c14e463c750f, type: 3}
+  m_Name: Umbrella01
+  m_Shader: {fileID: 4800000, guid: 757cbd28dfbffc54197f6bbbba6692fa, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -55,14 +55,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture:
-        m_Texture: {fileID: 2800000, guid: a089c56034497964baf6cf45ab28d9a8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _texcoord:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -84,5 +76,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LightColor: {r: 0.6603774, g: 0.42995507, b: 0.21493408, a: 0}
-    - _ShadowColor: {r: 0.5283019, g: 0.19188315, b: 0.28327012, a: 0}
+    - _LightColor: {r: 0.8018868, g: 0.6463702, b: 0.3517711, a: 0}
+    - _ShadowColor: {r: 0.6226415, g: 0.34069064, b: 0.518914, a: 0}
